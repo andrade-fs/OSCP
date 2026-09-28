@@ -1,0 +1,7 @@
+# Un paquete pipx por línea. Instalador idempotente.
+# NOTA: uploadserver NO va aquí; se instala con pip3 --user para que funcione
+# `python3 -m uploadserver` (el playbook lo usa así). Ver phase_pipx en install.sh.
+bloodyAD
+ldeep
+pywhisker
+pwncat-cs

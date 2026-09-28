@@ -1,0 +1,33 @@
+# Toolkit para VÍCTIMAS Windows (x86_64 PE). Destino: ~/Documentos/Tools/win
+# formato: name|url|how   (how: raw | zip:<entry> | zip:any | zipdir)
+winPEASx64.exe|https://github.com/peass-ng/PEASS-ng/releases/latest/download/winPEASx64.exe|raw
+winPEASx86.exe|https://github.com/peass-ng/PEASS-ng/releases/latest/download/winPEASx86.exe|raw
+winPEASany.exe|https://github.com/peass-ng/PEASS-ng/releases/latest/download/winPEASany.exe|raw
+winPEAS.bat|https://github.com/peass-ng/PEASS-ng/releases/latest/download/winPEAS.bat|raw
+PowerUp.ps1|https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/master/Privesc/PowerUp.ps1|raw
+PowerView.ps1|https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/master/Recon/PowerView.ps1|raw
+Invoke-Mimikatz.ps1|https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/master/Exfiltration/Invoke-Mimikatz.ps1|raw
+powercat.ps1|https://raw.githubusercontent.com/besimorhino/powercat/master/powercat.ps1|raw
+LaZagne.exe|https://github.com/AlessandroZ/LaZagne/releases/latest/download/LaZagne.exe|raw
+GodPotato.exe|https://github.com/BeichenDream/GodPotato/releases/latest/download/GodPotato-NET4.exe|raw
+SigmaPotato.exe|https://github.com/tylerdotrar/SigmaPotato/releases/latest/download/SigmaPotato.exe|raw
+PrintSpoofer64.exe|https://github.com/itm4n/PrintSpoofer/releases/latest/download/PrintSpoofer64.exe|raw
+PrintSpoofer32.exe|https://github.com/itm4n/PrintSpoofer/releases/latest/download/PrintSpoofer32.exe|raw
+JuicyPotato.exe|https://github.com/ohpe/juicy-potato/releases/latest/download/JuicyPotato.exe|raw
+JuicyPotatoNG.exe|https://github.com/antonioCoco/JuicyPotatoNG/releases/latest/download/JuicyPotatoNG.zip|zip:any
+RoguePotato.exe|https://github.com/antonioCoco/RoguePotato/releases/latest/download/RoguePotato.zip|zip:any
+RogueWinRM.exe|https://github.com/antonioCoco/RogueWinRM/releases/latest/download/RogueWinRM.zip|zip:any
+RemotePotato0.exe|https://github.com/antonioCoco/RemotePotato0/releases/latest/download/RemotePotato0.zip|zip:any
+FullPowers.exe|https://github.com/itm4n/FullPowers/releases/latest/download/FullPowers.exe|raw
+SeManageVolumeExploit.exe|https://github.com/CsEnox/SeManageVolumeExploit/releases/latest/download/SeManageVolumeExploit.exe|raw
+accesschk64.exe|https://live.sysinternals.com/accesschk64.exe|raw
+accesschk.exe|https://live.sysinternals.com/accesschk.exe|raw
+procdump64.exe|https://live.sysinternals.com/procdump64.exe|raw
+procdump.exe|https://live.sysinternals.com/procdump.exe|raw
+Procmon.exe|https://live.sysinternals.com/Procmon.exe|raw
+nc.exe|https://raw.githubusercontent.com/int0x33/nc.exe/master/nc.exe|raw
+nc64.exe|https://raw.githubusercontent.com/int0x33/nc.exe/master/nc64.exe|raw
+chisel.exe|LATEST:jpillora/chisel:chisel_.*_windows_amd64\.zip|zip:any
+ligolo-agent.exe|LATEST:nicocha30/ligolo-ng:ligolo-ng_agent_.*_windows_amd64\.zip|zip:any
+SharpHound.ps1|https://github.com/SpecterOps/SharpHound/releases/latest/download/SharpHound_v2.16.0_windows_x86.zip|zip:SharpHound.ps1
+mimikatz|https://github.com/gentilkiwi/mimikatz/releases/latest/download/mimikatz_trunk.zip|zipdir

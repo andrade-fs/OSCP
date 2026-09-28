@@ -1,0 +1,23 @@
+# ===== Binarios pesados (se regeneran con OSCP-setup) =====
+Tools/
+
+# ===== Runtime local del setup =====
+OSCP-setup/logs/
+OSCP-setup/state/journal.tsv
+
+# ===== Obsidian: estado de sesión y plugins (re-descargables) =====
+OSCP/.obsidian/workspace.json
+OSCP/.obsidian/workspace-mobile.json
+OSCP/.obsidian/plugins/
+OSCP/.obsidian-mcp/
+
+# ===== Python =====
+__pycache__/
+*.pyc
+
+# ===== Pi runtime =====
+.atl/
+
+# ===== OS =====
+.DS_Store
+Thumbs.db

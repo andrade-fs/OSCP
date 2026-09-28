@@ -1,0 +1,167 @@
+# Técnica: nginx
+
+[[00-inicio|Inicio]] · [[Entorno|Entorno]] · [[Puertos|Puertos]] · [[Servicios|Servicios]] · [[Tecnicas|Tecnicas]] · [[Maquinas|Maquinas]] · [[Referencias|Referencias]]
+
+**152 máquina(s)** mencionan esta técnica.
+
+## Máquinas
+
+- [[htb-snapped\|Snapped]] — 95 mención(es) · Linux · Hard
+- [[htb-steamcloud\|SteamCloud]] — 54 mención(es) · Linux · Easy
+- [[htb-pikatwoo\|PikaTwoo]] — 41 mención(es) · Linux · Insane
+- [[htb-interactive\|htb-interactive]] — 38 mención(es)
+- [[htb-pit\|Pit]] — 33 mención(es) · Linux · Medium
+- [[htb-bighead\|BigHead]] — 29 mención(es) · Windows · Insane
+- [[htb-kobold\|Kobold]] — 28 mención(es) · Linux · Easy
+- [[htb-broker\|Broker]] — 27 mención(es) · Linux · Easy
+- [[htb-spectra\|Spectra]] — 27 mención(es) · Chrome · Easy
+- [[htb-gobox\|Gobox]] — 24 mención(es) · Linux · Medium
+- [[htb-format\|Format]] — 22 mención(es) · Linux · Medium
+- [[htb-pikaboo\|Pikaboo]] — 22 mención(es) · Linux · Hard
+- [[htb-fulcrum\|Fulcrum]] — 21 mención(es) · Linux · Insane
+- [[htb-giveback\|Giveback]] — 21 mención(es) · Linux · Medium
+- [[htb-hancliffe\|Hancliffe]] — 20 mención(es) · Windows · Hard
+- [[htb-nexus\|Nexus]] — 20 mención(es) · Linux · Easy
+- [[htb-pterodactyl\|Pterodactyl]] — 20 mención(es) · Linux · Medium
+- [[htb-variatype\|VariaType]] — 20 mención(es) · Linux · Medium
+- [[htb-cybermonday\|CyberMonday]] — 19 mención(es) · Linux · Hard
+- [[htb-sorcery\|Sorcery]] — 19 mención(es) · Linux · Insane
+- [[htb-fries\|Fries]] — 18 mención(es) · Windows · Hard
+- [[htb-skyfall\|Skyfall]] — 18 mención(es) · Linux · Insane
+- [[htb-silentium\|Silentium]] — 17 mención(es) · Linux · Easy
+- [[htb-awkward\|Awkward]] — 16 mención(es) · Linux · Medium
+- [[htb-dab\|Dab]] — 16 mención(es) · Linux · Hard
+- [[htb-sightless\|Sightless]] — 16 mención(es) · Linux · Easy
+- [[htb-freelancer\|Freelancer]] — 15 mención(es) · Windows · Hard
+- [[htb-seal\|Seal]] — 15 mención(es) · Linux · Medium
+- [[htb-cypher\|Cypher]] — 14 mención(es) · Linux · Medium
+- [[htb-monitorsfour\|MonitorsFour]] — 14 mención(es) · Windows · Easy
+- [[htb-soccer\|Soccer]] — 14 mención(es) · Linux · Easy
+- [[htb-heal\|Heal]] — 13 mención(es) · Linux · Medium
+- [[htb-registry\|Registry]] — 13 mención(es) · Linux · Hard
+- [[htb-registrytwo\|RegistryTwo]] — 13 mención(es) · Linux · Insane
+- [[htb-thenotebook\|TheNotebook]] — 13 mención(es) · Linux · Medium
+- [[htb-unattended\|Unattended]] — 13 mención(es) · Linux · Medium
+- [[htb-planning\|Planning]] — 12 mención(es) · Linux · Easy
+- [[htb-sneakymailer\|SneakyMailer]] — 12 mención(es) · Linux · Medium
+- [[htb-static\|Static]] — 12 mención(es) · Linux · Hard
+- [[htb-ariekei\|Ariekei]] — 11 mención(es) · Linux · Insane
+- [[htb-era\|Era]] — 11 mención(es) · Linux · Medium
+- [[htb-formulax\|FormulaX]] — 11 mención(es) · Linux · Hard
+- [[htb-nocturnal\|Nocturnal]] — 11 mención(es) · Linux · Easy
+- [[htb-orion\|Orion]] — 11 mención(es) · Linux · Easy
+- [[htb-trick\|Trick]] — 11 mención(es) · Linux · Easy
+- [[htb-backfire\|Backfire]] — 10 mención(es) · Linux · Medium
+- [[htb-craft\|Craft]] — 10 mención(es) · Linux · Medium
+- [[htb-editor\|Editor]] — 10 mención(es) · Linux · Easy
+- [[htb-frolic\|Frolic]] — 10 mención(es) · Linux · Easy
+- [[htb-hacknet\|HackNet]] — 10 mención(es) · Linux · Medium
+- [[htb-monitorsthree\|MonitorsThree]] — 10 mención(es) · Linux · Medium
+- [[htb-response\|Response]] — 10 mención(es) · Linux · Insane
+- [[htb-analytics\|Analytics]] — 9 mención(es) · Linux · Easy
+- [[htb-artificial\|Artificial]] — 9 mención(es) · Linux · Easy
+- [[htb-derailed\|Derailed]] — 9 mención(es) · Linux · Insane
+- [[htb-drive\|Drive]] — 9 mención(es) · Linux · Hard
+- [[htb-flujab\|FluJab]] — 9 mención(es) · Linux · Hard
+- [[htb-precious\|Precious]] — 9 mención(es) · Linux · Easy
+- [[htb-previous\|Previous]] — 9 mención(es) · Linux · Medium
+- [[htb-bolt\|Bolt]] — 8 mención(es) · Linux · Medium
+- [[htb-browsed\|Browsed]] — 8 mención(es) · Linux · Medium
+- [[htb-eureka\|Eureka]] — 8 mención(es) · Linux · Hard
+- [[htb-ghost\|Ghost]] — 8 mención(es) · Windows · Insane
+- [[htb-helix\|Helix]] — 8 mención(es) · Linux · Medium
+- [[htb-intentions\|Intentions]] — 8 mención(es) · Linux · Hard
+- [[htb-jupiter\|Jupiter]] — 8 mención(es) · Linux · Medium
+- [[htb-rainyday\|RainyDay]] — 8 mención(es) · Linux · Hard
+- [[htb-runner\|Runner]] — 8 mención(es) · Linux · Medium
+- [[htb-secret\|Secret]] — 8 mención(es) · Linux · Easy
+- [[htb-sekhmet\|Sekhmet]] — 8 mención(es) · Windows · Insane
+- [[htb-travel\|Travel]] — 8 mención(es) · Linux · Hard
+- [[htb-waldo\|Waldo]] — 8 mención(es) · Linux · Medium
+- [[htb-cozyhosting\|CozyHosting]] — 7 mención(es) · Linux · Easy
+- [[htb-magicgardens\|MagicGardens]] — 7 mención(es) · Linux · Insane
+- [[htb-onlyforyou\|OnlyForYou]] — 7 mención(es) · Linux · Medium
+- [[htb-overgraph\|Overgraph]] — 7 mención(es) · Linux · Hard
+- [[htb-shared\|Shared]] — 7 mención(es) · Linux · Medium
+- [[htb-solarlab\|SolarLab]] — 7 mención(es) · Windows · Medium
+- [[htb-soulmate\|soulmate]] — 7 mención(es) · Linux · Easy
+- [[htb-altered\|Altered]] — 6 mención(es) · Linux · Hard
+- [[htb-carpediem\|CarpeDiem]] — 6 mención(es) · Linux · Hard
+- [[htb-download\|Download]] — 6 mención(es) · Linux · Hard
+- [[htb-ellingson\|Ellingson]] — 6 mención(es) · Linux · Hard
+- [[htb-facts\|Facts]] — 6 mención(es) · Linux · Easy
+- [[htb-flustered\|Flustered]] — 6 mención(es) · Linux · Medium
+- [[htb-intuition\|Intuition]] — 6 mención(es) · Linux · Hard
+- [[htb-jarmis\|Jarmis]] — 6 mención(es) · Linux · Medium
+- [[htb-luanne\|Luanne]] — 6 mención(es) · NetBSD · Easy
+- [[htb-pilgrimage\|Pilgrimage]] — 6 mención(es) · Linux · Easy
+- [[htb-sandworm\|Sandworm]] — 6 mención(es) · Linux · Medium
+- [[htb-university\|University]] — 6 mención(es) · Windows · Insane
+- [[htb-agile\|Agile]] — 5 mención(es) · Linux · Medium
+- [[htb-bighead-bof\|BigHead Exploit Dev]] — 5 mención(es)
+- [[htb-bizness\|Bizness]] — 5 mención(es) · Linux · Easy
+- [[htb-darkcorp\|DarkCorp]] — 5 mención(es) · Windows · Insane
+- [[htb-environment\|Environment]] — 5 mención(es) · Linux · Medium
+- [[htb-extension\|Extension]] — 5 mención(es) · Linux · Hard
+- [[htb-interface\|Interface]] — 5 mención(es) · Linux · Medium
+- [[htb-nunchucks\|Nunchucks]] — 5 mención(es) · Linux · Easy
+- [[htb-outbound\|Outbound]] — 5 mención(es) · Linux · Easy
+- [[htb-resource\|Resource]] — 5 mención(es) · Linux · Hard
+- [[htb-ropetwo\|RopeTwo]] — 5 mención(es) · Linux · Insane
+- [[htb-shoppy\|Shoppy]] — 5 mención(es) · Linux · Easy
+- [[htb-strutted\|Strutted]] — 5 mención(es) · Linux · Medium
+- [[htb-ten\|Ten]] — 5 mención(es) · Linux · Hard
+- [[htb-union\|Union]] — 5 mención(es) · Linux · Medium
+- [[htb-barrier\|Barrier]] — 4 mención(es) · Linux · Medium
+- [[htb-bookworm\|Bookworm]] — 4 mención(es) · Linux · Insane
+- [[htb-brainfuck\|Brainfuck]] — 4 mención(es) · Linux · Insane
+- [[htb-greenhorn\|GreenHorn]] — 4 mención(es) · Linux · Easy
+- [[htb-haystack\|Haystack]] — 4 mención(es) · Linux · Easy
+- [[htb-keeper\|Keeper]] — 4 mención(es) · Linux · Easy
+- [[htb-late\|Late]] — 4 mención(es) · Linux · Easy
+- [[htb-metatwo\|MetaTwo]] — 4 mención(es) · Linux · Easy
+- [[htb-photobomb\|Photobomb]] — 4 mención(es) · Linux · Easy
+- [[htb-retired\|Retired]] — 4 mención(es) · Linux · Medium
+- [[htb-snoopy\|Snoopy]] — 4 mención(es) · Linux · Hard
+- [[htb-spider\|Spider]] — 4 mención(es) · Linux · Hard
+- [[htb-stocker\|Stocker]] — 4 mención(es) · Linux · Easy
+- [[htb-unicode\|Unicode]] — 4 mención(es) · Linux · Medium
+- [[htb-usage\|Usage]] — 4 mención(es) · Linux · Easy
+- [[htb-zetta\|Zetta]] — 4 mención(es) · Linux · Hard
+- [[htb-blurry\|Blurry]] — 3 mención(es) · Linux · Medium
+- [[htb-devvortex\|DevVortex]] — 3 mención(es) · Linux · Easy
+- [[htb-editorial\|Editorial]] — 3 mención(es) · Linux · Easy
+- [[htb-faculty\|Faculty]] — 3 mención(es) · Linux · Medium
+- [[htb-horizontall\|Horizontall]] — 3 mención(es) · Linux · Easy
+- [[htb-intense\|Intense]] — 3 mención(es) · Linux · Hard
+- [[htb-jewel\|Jewel]] — 3 mención(es) · Linux · Medium
+- [[htb-oouch\|Oouch]] — 3 mención(es) · Linux · Hard
+- [[htb-scanned\|Scanned]] — 3 mención(es) · Linux · Insane
+- [[htb-surveillance\|Surveillance]] — 3 mención(es) · Linux · Medium
+- [[htb-zero\|Zero]] — 3 mención(es) · Linux · Insane
+- [[htb-delivery\|Delivery]] — 2 mención(es) · Linux · Easy
+- [[htb-fluxcapacitor\|FluxCapacitor]] — 2 mención(es) · Linux · Medium
+- [[htb-haircut\|Haircut]] — 2 mención(es) · Linux · Medium
+- [[htb-imagery\|Imagery]] — 2 mención(es) · Linux · Medium
+- [[htb-monitorstwo\|MonitorsTwo]] — 2 mención(es) · Linux · Easy
+- [[htb-perfection\|Perfection]] — 2 mención(es) · Linux · Easy
+- [[htb-sherlock-bumblebee\|Bumblebee]] — 2 mención(es) · Easy
+- [[htb-tentacle\|Tentacle]] — 2 mención(es) · Linux · Hard
+- [[htb-toby\|Toby]] — 2 mención(es) · Linux · Insane
+- [[htb-twomillion\|TwoMillion]] — 2 mención(es) · Linux · Easy
+- [[htb-validation\|Validation]] — 2 mención(es) · Linux · Easy
+- [[htb-bitlab\|Bitlab]] — 1 mención(es) · Linux · Medium
+- [[htb-laboratory\|Laboratory]] — 1 mención(es) · Linux · Easy
+- [[htb-playertwo\|PlayerTwo]] — 1 mención(es) · Linux · Insane
+- [[htb-ready\|Ready]] — 1 mención(es) · Linux · Medium
+- [[htb-redpanda\|RedPanda]] — 1 mención(es) · Linux · Easy
+- [[htb-traverxec\|Traverxec]] — 1 mención(es) · Linux · Easy
+- [[htb-whiterabbit\|WhiteRabbit]] — 1 mención(es) · Linux · Insane
+- [[htb-writer\|Writer]] — 1 mención(es) · Linux · Medium
+
+## Cómo ver el contexto
+
+```bash
+python3 _sistema/herramientas/buscar.py 'nginx' -v
+python3 _sistema/herramientas/buscar.py 'nginx' -v --oscp
+```

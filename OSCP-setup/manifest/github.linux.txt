@@ -1,0 +1,16 @@
+# Toolkit para VÍCTIMAS Linux (amd64). Destino: ~/Documentos/Tools/linux
+# formato: name|url|destino|how|mode
+# how: raw | gz | targz:<member> ; url puede ser LATEST:owner/repo:regex
+linpeas.sh|https://github.com/peass-ng/PEASS-ng/releases/latest/download/linpeas.sh|linpeas.sh|raw|0755
+pspy64|https://github.com/DominicBreuker/pspy/releases/latest/download/pspy64|pspy64|raw|0755
+pspy32|https://github.com/DominicBreuker/pspy/releases/latest/download/pspy32|pspy32|raw|0755
+pspy64s|https://github.com/DominicBreuker/pspy/releases/latest/download/pspy64s|pspy64s|raw|0755
+pspy32s|https://github.com/DominicBreuker/pspy/releases/latest/download/pspy32s|pspy32s|raw|0755
+linux-exploit-suggester.sh|https://raw.githubusercontent.com/The-Z-Labs/linux-exploit-suggester/master/linux-exploit-suggester.sh|linux-exploit-suggester.sh|raw|0755
+lse.sh|https://raw.githubusercontent.com/diego-treitos/linux-smart-enumeration/master/lse.sh|lse.sh|raw|0755
+LinEnum.sh|https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh|LinEnum.sh|raw|0755
+deepce.sh|https://raw.githubusercontent.com/stealthcopter/deepce/master/deepce.sh|deepce.sh|raw|0755
+unix-privesc-check.sh|https://raw.githubusercontent.com/pentestmonkey/unix-privesc-check/master/upc.sh|unix-privesc-check.sh|raw|0755
+traitor|https://github.com/liamg/traitor/releases/latest/download/traitor-amd64|traitor|raw|0755
+chisel|LATEST:jpillora/chisel:chisel_.*_linux_amd64\.gz|chisel|gz|0755
+ligolo-agent|LATEST:nicocha30/ligolo-ng:ligolo-ng_agent_.*_linux_amd64\.tar\.gz|ligolo-agent|targz:agent|0755

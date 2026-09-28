@@ -1,0 +1,22 @@
+# Módulos Go (preferencia Go por decisión: "todo lo que se pueda con Go").
+# Se instalan en ~/.local/bin con `go install`.
+github.com/ropnop/kerbrute@latest
+github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+github.com/projectdiscovery/httpx/cmd/httpx@latest
+github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
+github.com/projectdiscovery/dnsx/cmd/dnsx@latest
+github.com/projectdiscovery/katana/cmd/katana@latest
+github.com/projectdiscovery/alterx/cmd/alterx@latest
+github.com/projectdiscovery/pdtm/cmd/pdtm@latest
+github.com/ffuf/ffuf/v2@latest
+github.com/OJ/gobuster/v3@latest
+github.com/hahwul/dalfox/v2@latest
+github.com/lc/gau/v2/cmd/gau@latest
+github.com/tomnomnom/waybackurls@latest
+github.com/tomnomnom/anew@latest
+github.com/tomnomnom/qsreplace@latest
+github.com/tomnomnom/httprobe@latest
+github.com/hakluke/hakrawler@latest
+github.com/jaeles-project/gospider@latest
+github.com/003random/getJS@latest
+github.com/edoardottt/cariddi/cmd/cariddi@latest

@@ -1,0 +1,36 @@
+# Archivos a copiar desde Flangvik/SharpCollection (NetFramework_4.7_x64).
+# Cubre la mayoría de GhostPack y utilidades .NET ofensivas.
+Certify.exe
+ForgeCert.exe
+GMSAPasswordReader.exe
+InternalMonologue.exe
+KrbRelayUp.exe
+LockLess.exe
+PassTheCert.exe
+Rubeus.exe
+RunasCs.exe
+SafetyKatz.exe
+Seatbelt.exe
+SharPersist.exe
+SharpADWS.exe
+SharpAllowedToAct.exe
+SharpChrome.exe
+SharpDPAPI.exe
+SharpDump.exe
+SharpGPOAbuse.exe
+SharpHound.exe
+SharpKatz.exe
+SharpLAPS.exe
+SharpMiniDump.exe
+SharpMove.exe
+SharpRDP.exe
+SharpSCCM.exe
+SharpShares.exe
+SharpUp.exe
+SharpWMI.exe
+SharpWSUS.exe
+Snaffler.exe
+StandIn.exe
+SweetPotato.exe
+Watson.exe
+Whisker.exe

@@ -1,0 +1,7 @@
+# Herramientas que corren en Kali desde GitHub (raw).
+# formato: name|url|destino_en_Tools/kali|modo
+pyLAPS.py|https://raw.githubusercontent.com/p0dalirius/pyLAPS/main/pyLAPS.py|pyLAPS.py|0755
+gMSADumper.py|https://raw.githubusercontent.com/micahvandeusen/gMSADumper/main/gMSADumper.py|gMSADumper.py|0755
+targetedKerberoast.py|https://raw.githubusercontent.com/ShutdownRepo/targetedKerberoast/main/targetedKerberoast.py|targetedKerberoast.py|0755
+PetitPotam.py|https://raw.githubusercontent.com/topotam/PetitPotam/main/PetitPotam.py|PetitPotam.py|0755
+ldapsearch-ad.py|https://raw.githubusercontent.com/yaap7/ldapsearch-ad/master/ldapsearch-ad.py|ldapsearch-ad.py|0755

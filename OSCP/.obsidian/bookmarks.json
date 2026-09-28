@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "type": "file",
+      "title": "🎯 EXAMEN",
+      "path": "examen/00-dashboard.md"
+    },
+    {
+      "type": "file",
+      "title": "Inicio",
+      "path": "guia/00-inicio.md"
+    },
+    {
+      "type": "file",
+      "title": "Puertos",
+      "path": "vault/indices/Puertos.md"
+    },
+    {
+      "type": "file",
+      "title": "Tecnicas",
+      "path": "vault/indices/Tecnicas.md"
+    },
+    {
+      "type": "file",
+      "title": "Servicios",
+      "path": "vault/indices/Servicios.md"
+    },
+    {
+      "type": "file",
+      "title": "Maquinas",
+      "path": "vault/indices/Maquinas.md"
+    }
+  ]
+}

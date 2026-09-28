@@ -1,0 +1,25 @@
+# Paquetes apt. Secciones acumulativas: base ⊂ oscp ⊂ full.
+# El instalador verifica existencia con `apt-cache show` y omite los inexistentes.
+
+[base]
+git curl wget ca-certificates jq unzip zip p7zip-full tar vim nano tmux screen
+build-essential gcc make python3 python3-pip python3-venv pipx golang-go
+mingw-w64 dnsutils net-tools whois openssl file tree
+
+[oscp]
+enum4linux enum4linux-ng smbmap smbclient rpcclient ldap-utils
+nxc evil-winrm bloodhound.py certipy-ad impacket-scripts
+krb5-user ntpsec-ntpdate rdate
+proxychains4 chisel ligolo-ng ncat rlwrap sshpass freerdp3-x11
+python3-pwntools python3-pyftpdlib
+penelope coercer mitm6 krbrelayx joomscan
+seclists wordlists
+
+[full]
+hashcat hashcat-utils hcxtools hcxdumptool john hydra medusa patator
+crunch cewl cupp nmap masscan netdiscover arp-scan
+whatweb nikto nuclei ffuf gobuster feroxbuster wpscan sqlmap wapiti
+dirb dirbuster wfuzz testssl.sh
+wireshark tcpdump bettercap mitmproxy responder aircrack-ng sshuttle
+ghidra radare2 gdb gdb-multiarch binwalk foremost exiftool sleuthkit
+impacket-scripts nishang
