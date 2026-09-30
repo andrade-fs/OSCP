@@ -4,13 +4,15 @@ Checklist de escalada en Linux. **Recorré en este orden**: de lo más probable 
 lo barato a lo caro.
 
 Esta nota es el **paso a paso con comandos**. La referencia profunda está en
-[`03-privesc-linux.md`](../03-privesc-linux.md) y en la chuleta de GTFOBins
-(`vault/indices/Referencias/GTFOBins/`).
+[`03-privesc-linux.md`](../03-privesc-linux.md).
+
+> **Referencias por binario**: el espejo local de GTFOBins **no existe** en este vault (falta el
+> directorio por binario). Queda el índice ([[GTFOBins]]) y las alternativas online de abajo.
 
 > Fuentes: [HackTricks — Linux Privilege Escalation](https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/index.html) ·
 > [HackTricks — Interesting Groups](https://book.hacktricks.wiki/en/linux-hardening/user-information/interesting-groups-linux-pe/index.html) ·
 > [HackTricks — Wildcards](https://book.hacktricks.wiki/en/linux-hardening/interesting-files-permissions/wildcards-spare-tricks.html) ·
-> [GTFOBins](https://gtfobins.github.io/).
+> [GTFOBins](https://gtfobins.github.io/) *(online: el espejo por binario no está generado)*.
 
 [[00-inicio|Inicio]] · [[Entorno|Entorno]] · [[Puertos|Puertos]] · [[Servicios|Servicios]] · [[Tecnicas|Tecnicas]] · [[Maquinas|Maquinas]]
 
@@ -759,7 +761,7 @@ sudo -l
 
 | Recurso | Para qué |
 | --- | --- |
-| [[GTFOBins]] | **458 binarios** con shell/lectura por contexto (`sudo`, `suid`, `capabilities`) |
+| [[GTFOBins]] | Índice de 458 binarios y sus funciones. Las **notas por binario no están generadas**: el código por contexto (`sudo`/`suid`/`caps`) está en las alternativas online de abajo |
 | [HackTricks — Linux LPE](https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/index.html) | Listado exhaustivo de vectores |
 | [HackTricks — Interesting Groups](https://book.hacktricks.wiki/en/linux-hardening/user-information/interesting-groups-linux-pe/index.html) | disk, video, docker, lxd, adm… |
 | [HackTricks — Wildcards](https://book.hacktricks.wiki/en/linux-hardening/interesting-files-permissions/wildcards-spare-tricks.html) | tar, rsync, 7z, zip, tcpdump |

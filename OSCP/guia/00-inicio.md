@@ -5,21 +5,38 @@ Vault de estudio y consulta. **565 writeups de máquinas HTB**, indexados por
 
 ---
 
-## Durante el examen: el flujo
+## Durante el examen: el router
 
-Tenés un puerto abierto y no sabés qué hacer con él. Tres pasos.
+**La lógica de decisión no vive acá.** Vive en un único lugar:
+[`router-escenarios.md`](router-escenarios.md). Entrás con una **observación** y salís con el
+documento correcto, la evidencia a registrar y la condición de parqueo.
 
-### 1. Abrí la nota del puerto
+| Observación | Escenario del router |
+| --- | --- |
+| Puertos abiertos, sin prioridad clara | 1 — Triage |
+| Web, panel o API | 2 — Objetivo web |
+| Shell Linux / Windows | 3 y 4 — Escalada |
+| Set de AD con credenciales | 5 — AD con credenciales |
+| Hash NTLM, TGT o PFX | 6 — Hashes, TGT y PFX |
+| Una segunda red visible | 7 — Pivoting |
+| Subir o bajar archivos | 8 — Transferencia y payloads |
+| Kerberos con errores raros | 9 — Kerberos y entorno |
+| Capturar evidencia | 10 — Reporte y evidencia |
+| Bloqueo | 11 — Estoy trabado |
 
-`Ctrl+O` (quick switcher) → escribí el número → Enter.
+Si agregás un camino de decisión, va en el router, no acá. Este documento es el **manual de
+uso**: cómo buscar, cómo leer y cómo escribir en el vault.
+
+### El insumo que más se usa: la nota de puerto
+
+`Ctrl+O` (quick switcher) → el número → Enter.
 
 ```
 Ctrl+O  →  "5000"  →  vault/indices/Puertos/5000.md
 ```
 
-### 2. Leé la columna **Real**, no la etiqueta de nmap
-
-Esta es la parte que importa. nmap adivina por heurística y **se equivoca mucho**.
+Leé la columna **Real**, no la etiqueta de nmap: nmap adivina por heurística y **se equivoca
+mucho**.
 
 | Puerto | nmap dice | Lo que corría de verdad |
 | --- | --- | --- |
@@ -30,11 +47,6 @@ Esta es la parte que importa. nmap adivina por heurística y **se equivoca mucho
 La columna *Real* sale del **encabezado de la sección** del writeup
 (`### Let's Chat - TCP 5000`), no de la etiqueta de nmap. Es lo que el autor
 encontró al enumerar.
-
-### 3. Abrí la máquina que se parezca
-
-Si el *Real* dice `Docker Registry`, abrí esa máquina y mirá cómo la atacó. Si tu
-objetivo tiene un Docker Registry en el 5000, ahí tenés el camino.
 
 ---
 
@@ -54,16 +66,18 @@ less vault/indices/Puertos/5000.md
 python3 _sistema/herramientas/buscar.py PrintSpoofer -v
 python3 _sistema/herramientas/buscar.py kerberoasting -v --oscp
 
-# 3) Ver un binario en las referencias
+# 3) Ver un binario de Windows en las referencias (LOLBAS está generado)
 less vault/indices/Referencias/LOLBAS/Certutil.exe.md
-less vault/indices/Referencias/GTFOBins/find.md
 
-# 4) Buscar a lo bruto en todo el vault (rápido, con ripgrep)
+# 4) GTFOBins: SOLO existe el índice, no las notas por binario
+less vault/indices/Referencias/GTFOBins.md
+
+# 5) Buscar a lo bruto en todo el vault (rápido, con ripgrep)
 rg -l 'seimpersonate' .                       # qué archivos lo mencionan
 rg -n -C 3 'PrintSpoofer' vault/indices/Tecnicas/           # con contexto
 rg -l 'GodPotato|JuicyPotato' vault/indices/Referencias/    # regex
 
-# 5) Los índices maestros
+# 6) Los índices maestros
 less Puertos.md Tecnicas.md Servicios.md Maquinas.md Referencias.md
 ```
 
@@ -75,9 +89,13 @@ Está en el repositorio de Kali:
 sudo apt install -y obsidian
 ```
 
-Después abrí Obsidian y elegí **"Open folder as vault"** → `~/OSCP`. La
+Después abrí Obsidian y elegí **"Open folder as vault"** → tu copia del vault. La
 configuración ya está puesta en `.obsidian/`, así que va a tomar el tema, los
 marcadores y el grafo sin que toques nada.
+
+> **Rutas no conciliadas**: esta guía y el resto de la documentación nombran `~/OSCP`; el
+> instalador (`OSCP-setup/lib.sh`) crea `~/Documentos/OSCP`. Verificá cuál existe en tu máquina
+> antes de copiar cualquier comando con ruta. Estado: [`../_sistema/SALUD-DOCUMENTAL.md`](../_sistema/SALUD-DOCUMENTAL.md).
 
 ### Atajos que sirven con Obsidian abierto
 
@@ -90,35 +108,41 @@ marcadores y el grafo sin que toques nada.
 
 ---
 
-## Tabla de decisión
+## Atajos operativos (sin lógica de decisión)
 
-| Lo que ves | Dónde ir |
+Esto no es un árbol de decisión: es la lista de documentos que vas a usar en el examen. Para
+**qué hacer** según lo que observás, andá al [router](router-escenarios.md).
+
+| Documento | Para qué |
 | --- | --- |
-| Un puerto abierto | `vault/indices/Puertos/<número>` |
-| Un servicio (SMB, LDAP, WinRM…) | `vault/indices/Servicios/<nombre>` |
-| Una técnica (kerberoast, SUID, PrintSpoofer…) | `vault/indices/Tecnicas/<nombre>` |
-| Un **puerto filtrado** | `vault/indices/Puertos/<n>` → la nota te avisa: es **pivoting**, no explotación directa |
-| Tengo shell y soy usuario común | [[LPE-Linux]] o [[LPE-Windows]] |
-| Kerberos falla con errores raros | [[Entorno]] |
-| No sé por dónde empezar | [[Maquinas]] → filtrá por OSCP |
-| Estoy en el set de AD (40 pts) | [[AD-walkthrough]] — recorrido de cero a DA |
-| **Empiezo el examen** | [[00-dashboard]] — panel de examen (1 doc por máquina) |
-| Tengo una máquina suelta (20 pts) | [[Standalone-walkthrough]] — recon → foothold → LPE → flags |
-| Tengo una web y no sé por dónde | [[09-web]] — ataques web (LFI, upload, SQLi, APIs…) |
-| Un binario y querés sacarle shell | `vault/indices/Referencias/GTFOBins/<binario>` |
-| Un binario de Windows para descargar/ejecutar | `vault/indices/Referencias/LOLBAS/<binario>` |
-| Tenés un hash, un TGT o un PFX | `vault/indices/Referencias/WADComs/` |
-| Necesitás algo más profundo | [[Referencias]] |
+| [router-escenarios.md](router-escenarios.md) | **La decisión**: observación → documento correcto |
+| `vault/indices/Puertos/<número>` | Precedentes de un puerto: qué corría de verdad |
+| `vault/indices/Servicios/<nombre>` | Precedentes por etiqueta de servicio |
+| `vault/indices/Tecnicas/<nombre>` | Precedentes por técnica + receta (¡muchas están en blanco!) |
+| [LPE-Linux](lpe/LPE-Linux.md) · [LPE-Windows](lpe/LPE-Windows.md) | Orden de ataque al escalar |
+| [AD-walkthrough](walkthroughs/AD-walkthrough.md) | Recorrido del set de AD, de cero a DA |
+| [Standalone-walkthrough](walkthroughs/Standalone-walkthrough.md) | Recorrido de las 3 sueltas |
+| [00-dashboard](../examen/00-dashboard.md) | Panel de examen: 1 doc por máquina |
+| [08-reporte-y-evidencia](08-reporte-y-evidencia.md) | Qué capturar y cuándo |
+| [plantillas/](../plantillas/como-usar-plantillas.md) | Tarjetas para registrar algo nuevo |
+| [Entorno](Entorno.md) | Kerberos, DNS, `/etc/hosts`, proxychains |
+
+> **Aviso sobre la capa generada**: el `vault/` conserva notas en blanco (217 en total) y el
+espejo GTFOBins por binario **no existe**. Si un enlace abre vacío, no es tu error: usá el
+cheatsheet o la guía canónica. Detalle y conteos: [`../_sistema/SALUD-DOCUMENTAL.md`](../_sistema/SALUD-DOCUMENTAL.md).
 
 ---
 
 ## Comandos copy-paste
 
-**23 técnicas tienen recetario completo** en su propia nota, en la sección
-*Comandos*. Buscás la técnica y tenés los comandos exactos más las máquinas donde
-se usó.
-
+**23 técnicas figuran con recetario** en su propia nota, en la sección *Comandos*.
 En [[Tecnicas]] la columna **Receta** te marca cuáles lo tienen.
+
+> ⚠️ **Pero 6 de esas 23 notas están en blanco** en la capa generada: `kerberoasting`,
+> `pass-the-hash`, `dcsync`, `delegacion-restringida`, `suid` y `lsass`. El enlace existe y
+> abre vacío. Para esos temas, usá el cheatsheet correspondiente
+> ([impacket](../cheatsheets/impacket.md), [nxc](../cheatsheets/nxc.md),
+> [adcs-esc](../cheatsheets/adcs-esc.md)) o la guía canónica.
 
 Con recetario:
 
@@ -129,25 +153,30 @@ Con recetario:
 | **LPE Linux** | sudo · suid · capabilities · cron · nfs-no_root_squash · docker-group · credenciales-en-archivos |
 | **LPE Windows** | seimpersonate · unquoted-service-path · alwaysinstallelevated · lsass |
 
+*(En negrita no: las 6 listadas arriba están en blanco en disco.)*
+
 ---
 
-## Referencias externas — espejadas localmente
+## Referencias externas — qué está espejado y qué no
 
-Tres bases de datos convertidas a notas, **buscables offline**. `Ctrl+O` y el
-nombre del binario.
+**El espejo está incompleto.** Estos son los números reales:
 
-| Espejo | Notas | Para qué |
-| --- | --- | --- |
-| [[GTFOBins]] | 458 binarios | Binarios Unix: shell y lectura por contexto (`sudo`, `suid`, `capabilities`) |
-| [[WADComs]] | 103 recetas | Comandos de AD ordenados por **lo que tenés** |
-| [[LOLBAS]] | 248 binarios | Binarios legítimos de Windows usables como atacante |
+| Espejo | Índice | Notas individuales | Estado |
+| --- | --- | --- | --- |
+| [[GTFOBins]] | ✔ | **0 de 458** | El directorio por binario **no existe**: no hay referencia local por binario. |
+| [[WADComs]] | ✔ | 103 (35 **en blanco**) | Parcial: 68 abren con contenido. |
+| [[LOLBAS]] | ✔ | 248 (81 **en blanco**) | Parcial: 167 abren con contenido. |
 
-**Por qué local y no solo un link**: internet durante el examen es un punto único
+**Por qué local igual sirve parcialmente**: internet durante el examen es un punto único
 de falla, y Obsidian no indexa sitios web. Buscar `certutil` en el vault no
 encontraría nada que esté solo en LOLBAS.
 
-El catálogo completo de enlaces online, con la advertencia de cumplimiento sobre
-IA, está en **[[Referencias]]**.
+**Alternativa para GTFOBins**: el índice lista los binarios y sus funciones, pero el código por
+contexto (`sudo`/`suid`/`capabilities`) **no está en el vault**. Para eso, ver las alternativas
+documentadas en [`03-privesc-linux.md`](03-privesc-linux.md) y [`lpe/LPE-Linux.md`](lpe/LPE-Linux.md).
+
+El catálogo de enlaces online, con la advertencia de cumplimiento sobre IA, está en
+**[[Referencias]]**. Conteos y defectos: [`../_sistema/SALUD-DOCUMENTAL.md`](../_sistema/SALUD-DOCUMENTAL.md).
 
 ### Antes de copiar y pegar
 
@@ -225,7 +254,8 @@ OSCP/
 ├── README.md              ← portada / índice general
 │
 ├── guia/                  ← EL PLAYBOOK (leer en orden)
-│   ├── 00-inicio.md             ← estás acá (flujo de examen)
+│   ├── router-escenarios.md     ← 🎯 EL ROUTER (observación → qué hacer)
+│   ├── 00-inicio.md             ← estás acá (manual de uso)
 │   ├── 00-reglas-examen.md      restricciones (leer antes de rendir)
 │   ├── 01-metodologia.md        el bucle de trabajo y las 23 h 45 min
 │   ├── 02-enumeracion-servicios.md
@@ -247,16 +277,19 @@ OSCP/
 │
 ├── cheatsheets/           ← chuletas (nxc, impacket, potatoes, web…)
 │
-├── vault/                 ← GENERADO: no editar a mano
-│   ├── indices/
-│   │   ├── Puertos.md + Puertos/      puerto → máquinas  ← FLUJO DE EXAMEN
-│   │   ├── Servicios.md + Servicios/  etiqueta nmap → máquinas
-│   │   ├── Tecnicas.md + Tecnicas/    técnica → máquinas + receta
-│   │   ├── Maquinas.md                565 máquinas + marca OSCP
-│   │   └── Referencias.md + Referencias/  GTFOBins, WADComs, LOLBAS
-│   └── corpus/                ← 565 writeups + _indice/
+├── plantillas/            ← tarjetas reutilizables (servicio, técnica)
 │
-├── _sistema/              ← INTERNO (datos, scripts, cobertura)
+├── vault/                 ← GENERADO: conservado, NO reproducible
+│   ├── indices/                (217 notas en blanco; GTFOBins por binario ausente)
+│   │   ├── Puertos.md + Puertos/         puerto → máquinas
+│   │   ├── Servicios.md + Servicios/     etiqueta nmap → máquinas
+│   │   ├── Tecnicas.md + Tecnicas/       técnica → máquinas + receta
+│   │   ├── Maquinas.md                   565 máquinas + marca OSCP
+│   │   └── Referencias.md + Referencias/ solo WADComs y LOLBAS (parciales)
+│   └── corpus/                 ← 565 writeups + _indice/
+│
+├── _sistema/              ← INTERNO (scripts, cobertura, salud documental)
+│   └── datos/             ← ❌ AUSENTE: entradas del generador
 ├── Inbox/ · Adjuntos/     ← uso de Obsidian
 ```
 
@@ -300,6 +333,7 @@ entran en la primera categoría.
 3. Verificá el **toolkit de escalada** (`~/examen/tools/`), sobre todo
    `win/potato_check64.exe` (dice qué Potato aplica según la máquina) y
    `win/FullPowers.exe` (recuperar privilegios de un token restringido).
+   > ⚠️ Ruta **no conciliada**: el instalador crea `~/Documentos/Tools`. Verificá cuál existe.
 4. Verificá que `nxc` responde: `nxc --version` → 1.5.1. Ya no hay shim roto.
 5. Probá este vault **offline**. Que Obsidian abra y que `Ctrl+O` encuentre un puerto.
 6. Tené el plan B de contingencia (la guía de OffSec lo pide explícitamente):
@@ -309,13 +343,19 @@ entran en la primera categoría.
 
 ## Mantenimiento
 
+> ⚠️ **No ejecutes los generadores mientras falte `_sistema/datos/`.** Producen salida parcial o
+> vacía y **sobrescriben** la capa generada que hoy sí sirve. Primero recuperá y versioná
+> `_sistema/datos/`; después respaldá `vault/indices/` y recién entonces regenerá. Ver
+> [`../_sistema/SALUD-DOCUMENTAL.md`](../_sistema/SALUD-DOCUMENTAL.md).
+
 | Quiero… | Comando |
 | --- | --- |
+| Verificar enlaces y estructura de la primera rebanada (seguro, offline) | `python3 _sistema/herramientas/verificar-enlaces.py --scope first-slice` |
+| Ver el estado de la capa generada | leer [`../_sistema/SALUD-DOCUMENTAL.md`](../_sistema/SALUD-DOCUMENTAL.md) |
 | Actualizar el corpus con writeups nuevos | `python3 _sistema/herramientas/raspar.py --solo-htb --workers 4` |
-| Regenerar los índices de texto | `python3 _sistema/herramientas/indice.py` |
-| Regenerar puertos/servicios/técnicas | `python3 _sistema/herramientas/construir-vault.py` |
-| Recalcular la marca OSCP | `python3 _sistema/herramientas/marcar-oscp.py` |
-| Agregar técnicas a vigilar | editar `_sistema/datos/tecnicas.txt` y regenerar |
+| Regenerar los índices de texto | ❌ **no ejecutar**: falta `_sistema/datos/` (`indice.py`) |
+| Regenerar puertos/servicios/técnicas | ❌ **no ejecutar**: falta `_sistema/datos/` (`construir-vault.py`) |
+| Recalcular la marca OSCP | ❌ **no ejecutar**: falta `_sistema/datos/` (`marcar-oscp.py`) |
 
 El raspador es **reanudable**: solo baja lo que falta, así que podés correrlo
 cuando quieras sin miedo a repetir trabajo.
