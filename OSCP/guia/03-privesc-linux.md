@@ -4,11 +4,14 @@ Tenés shell, sos usuario común, querés root. Esta nota es la **referencia por
 funciona cada vector, sus variantes y los casos raros.
 
 - Para el **paso a paso ordenado** y la enumeración, usá [`LPE-Linux.md`](lpe/LPE-Linux.md).
-- Para los **comandos exactos por binario y contexto**, usá GTFOBins (`vault/indices/Referencias/GTFOBins/`).
+- Para los **comandos por binario y contexto**, este vault **no tiene espejo local**: el
+  directorio `vault/indices/Referencias/GTFOBins/` **no existe**. Te queda el índice
+  ([[GTFOBins]]) y las alternativas de abajo.
 
 > Fuentes: [HackTricks — Linux LPE](https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/index.html),
 > [HackTricks — Wildcards](https://book.hacktricks.wiki/en/linux-hardening/interesting-files-permissions/wildcards-spare-tricks.html),
-> [GTFOBins](https://gtfobins.github.io/).
+> [GTFOBins](https://gtfobins.github.io/) *(online: el espejo local por binario no está generado)*,
+> [GTFOArgs](https://gtfoargs.github.io/).
 
 ---
 
@@ -650,7 +653,8 @@ SSH_AUTH_SOCK=/tmp/ssh-XXXX/agent.PID ssh root@localhost
 
 ### Escapar de una chroot / shell restringida
 
-- **GTFOBins** → binarios con propiedad "Shell".
+- **GTFOBins** → binarios con propiedad "Shell" en el índice (las notas por binario no están
+  generadas en este vault; usá también [GTFOArgs](https://gtfoargs.github.io/)).
 - **chroot**: si sos root dentro, un segundo `chroot` te deja fuera:
 
 ```c
@@ -710,8 +714,8 @@ capsh --print          # ¿qué caps tengo?
 
 | Herramienta / recurso | Para qué |
 | --- | --- |
-| [[GTFOBins]] | comandos por binario y contexto |
-| [GTFOArgs](https://gtfoargs.github.io/) | abuso solo con argumentos |
+| [[GTFOBins]] | Índice de binarios y funciones. **Las notas por binario no están generadas**: el código por contexto (`sudo`/`suid`/`caps`) hay que buscarlo en las alternativas online de abajo |
+| [GTFOArgs](https://gtfoargs.github.io/) | Abuso solo con argumentos (online) |
 | [HackTricks — Linux LPE](https://book.hacktricks.wiki/en/linux-hardening/privilege-escalation/index.html) | referencia exhaustiva |
 | [linux-exploit-suggester](https://github.com/mzet-/linux-exploit-suggester) | exploits de kernel |
 | `linpeas.sh` · `pspy64` · `traitor` · `DeepCe` | enumeración / auto-explotación |
