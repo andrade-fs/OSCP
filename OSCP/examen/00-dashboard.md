@@ -13,7 +13,7 @@
 | --- | --- | --- | --- |
 | Triage | 0:00 – 1:30 | Recon de las 6 máquinas. Solo mapa. | ☐ |
 | AD | 1:30 – 6:00 | Set de AD con creds frescas → [[ad-miembro-1]] · [[ad-miembro-2]] · [[ad-dc]] | ☐ |
-| Sueltas | 6:00 – 12:00 | [[suelta-1]] · [[suelta-2]] · [[suelta-3]] (de fácil a difícil) | ☐ |
+| Sueltas | 6:00 – 12:00 | [[suelta-112]] · [[suelta-111]] · [[suelta-110]] (de fácil a difícil) | ☐ |
 | Descanso | 12:00 – 16:00 | **Dormir.** Documentá el estado antes de irte. | ☐ |
 | Cierre | 16:00 – 21:00 | Volver al AD, cerrar, exprimir flags parciales | ☐ |
 | Reporte | 21:00 – 23:45 | Ordenar evidencia y escribir | ☐ |
@@ -26,9 +26,9 @@
 
 | Máquina | IP | SO | Tipo | Acceso (10) | Escalada (10/20) | Total | Notas |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [[suelta-1]] | | Linux/Win | Suelta | ☐ | ☐ | 0/20 | |
-| [[suelta-2]] | | Linux/Win | Suelta | ☐ | ☐ | 0/20 | |
-| [[suelta-3]] | | Linux/Win | Suelta | ☐ | ☐ | 0/20 | |
+| [[suelta-112]] | | Linux/Win | Suelta | ☐ | ☐ | 0/20 | |
+| [[suelta-111]] | | Linux/Win | Suelta | ☐ | ☐ | 0/20 | |
+| [[suelta-110]] | | Linux/Win | Suelta | ☐ | ☐ | 0/20 | |
 | [[ad-miembro-1]] | | Windows | AD cliente | ☐ | ☐ | 0/10 | |
 | [[ad-miembro-2]] | | Windows | AD cliente | ☐ | ☐ | 0/10 | |
 | [[ad-dc]] | | Windows | AD DC | ☐ | ☐ | 0/20 | |

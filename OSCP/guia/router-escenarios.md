@@ -102,7 +102,7 @@ Evidencia · Parqueo · Enlaces · Alcance**.
 | **Puntos de decisión** | ¿El binario permitido tiene código distinto por `sudo`, `suid` o `capabilities`? → leé el **contexto**, no copies a ciegas. ¿Root ejecuta algo que podés escribir? → ese es el camino. ¿Nada de lo anterior aplica? → recién ahí kernel/CVE, y sabiendo que puede tumbar la máquina. |
 | **Evidencia** | `id`, `sudo -l`, lista SUID/SGID, `getcap -r /`, el vector elegido con su output, `whoami` final y `local.txt`/`proof.txt` con la IP en el mismo cuadro. |
 | **Parqueo** | Parqueás cuando el orden de ataque completo de `LPE-Linux` está recorrido y documentado sin hallazgo. Dejá escrito qué probaste: sirve para el reporte y para no repetir. |
-| **Enlaces** | [`lpe/LPE-Linux.md`](lpe/LPE-Linux.md) · [`03-privesc-linux.md`](03-privesc-linux.md) · [`../playbooks/nfs.md`](../playbooks/nfs.md) · [`08-reporte-y-evidencia.md`](08-reporte-y-evidencia.md) · [`../examen/suelta-1.md`](../examen/suelta-1.md) |
+| **Enlaces** | [`lpe/LPE-Linux.md`](lpe/LPE-Linux.md) · [`03-privesc-linux.md`](03-privesc-linux.md) · [`../playbooks/nfs.md`](../playbooks/nfs.md) · [`08-reporte-y-evidencia.md`](08-reporte-y-evidencia.md) · [`../examen/suelta-1.md`](suelta-112.md) |
 | **Alcance** | `pendiente-politica` |
 
 > **Nota de referencias**: el espejo local por binario de GTFOBins **no existe** en este vault.
