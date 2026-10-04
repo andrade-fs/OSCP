@@ -1,0 +1,214 @@
+#OBS date time format options
+#E.g. DateMask=dd-MM-yyyy, TimeMaskWithSecond=HH:mm:SS and TimeMaskWithoutSecond=HH:mm
+com.ahsay.obs.core.DateMask=
+com.ahsay.obs.core.TimeMaskWithSecond=
+com.ahsay.obs.core.TimeMaskWithoutSecond=
+#
+#
+#OBS debug options
+#Verify backup data (hashed path, client path, size, block sequence, crc, etc.) during upload
+com.ahsay.obs.core.bfs.append.debug=
+#
+#Verify rebuild operation
+com.ahsay.obs.core.bfs.Rebuild.debug=
+com.ahsay.obs.core.bfs.debug=
+#
+#Print the total number of running operations
+com.ahsay.obs.core.cop.OptManager.printTotalOperationsDebug=
+#
+#Verify backup jobs are sorted in descending order
+com.ahsay.obs.core.db.DbsManager.CreateBackupJobSortedFileTable.debug=
+#
+#Verify backup user profile
+com.ahsay.obs.core.dbs.usr.debug=
+#
+#Show Backup Job Reminder Report generation and delivery information
+com.ahsay.obs.core.job.BackupJobReminderReport.debug=
+#
+#Show Backup Report generation and delivery information
+com.ahsay.obs.core.job.BackupJobReport.debug=
+#
+#Show backup quota usage during Backup Quota Reminder Report generation
+com.ahsay.obs.core.job.BackupQuotaReminderReport.debug=
+#
+#Verify Configuration Archival operation
+com.ahsay.obs.core.job.ConfigurationArchival.debug=
+#
+#Verify CRC operation and how backup files are skipped from the checking
+com.ahsay.obs.core.job.CrcCheck.debug=
+#
+#Force to run CRC operation when the OBS starts
+com.ahsay.obs.core.job.CrcCheck.RunOnce=
+#
+#Verify daily license update operation
+com.ahsay.obs.core.job.DailyLicenseCheck.debug=
+#
+#Control multiple debug options (com.ahsay.obs.core.job.BackupJobReminderReport.debug,
+#com.ahsay.obs.core.job.BackupJobReport.debug, com.ahsay.obs.core.job.BackupQuotaReminderReport.debug
+#com.ahsay.obs.core.job.DailyLicenseCheck.debug, com.ahsay.obs.core.job.DebugLogsRemoval.debug
+#com.ahsay.obs.core.job.ErrorReport.debug, com.ahsay.obs.core.job.ReplicationErrorReport.debug
+#com.ahsay.obs.core.job.InactiveUserReport.debug, com.ahsay.obs.core.job.LicenseExpiryCheck.debug
+#com.ahsay.obs.core.job.OfflineBackupReminderReport.debug, com.ahsay.obs.core.job.OnlineUserCache.debug
+#com.ahsay.obs.core.job.RemoveTrialUser.debug, com.ahsay.obs.core.job.RestoreJobReport.debug
+#com.ahsay.obs.core.job.RetentionPolicy.debug, com.ahsay.obs.core.job.SystemLogsRemoval.debug
+#com.ahsay.obs.core.job.TrialUserReminder.debug, com.ahsay.obs.core.job.UploadUsers.debug
+#com.ahsay.obs.core.job.UsageReport.debug, com.ahsay.obs.core.job.UsrModuleCheck.debug
+#com.ahsay.obs.obc.GetSearchFileListRqt.debug, com.ahsay.obs.core.job.CrcCheck.debug
+#com.ahsay.obs.core.job.ConfigurationArchival.debug, com.ahsay.obs.www.system.user.AutoUpdate.debug)
+com.ahsay.obs.core.job.debug=
+#
+#Verify the log limit during debug log removal housekeeping operation
+com.ahsay.obs.core.job.DebugLogsRemoval.debug=
+#
+#Verify Error Report start and end time
+com.ahsay.obs.core.job.ErrorReport.debug=
+#
+#Show backup user last activity time during Inactive User Report generation
+com.ahsay.obs.core.job.InactiveUserReport.debug=
+#
+#Verify job start, run, sleep, wake up, etc.
+com.ahsay.obs.core.job.Job=
+#
+#Verify license checking operation and license decryption error
+com.ahsay.obs.core.job.LicenseExpiryCheck.debug=
+#
+#Show last backup time, backup interval and offline notification day during Offline Backup Reminder Report generation
+com.ahsay.obs.core.job.OfflineBackupReminderReport.debug=
+#
+#Show online backup user cache information
+com.ahsay.obs.core.job.OnlineUserCache.debug=
+#
+#Force to run storage rebuild job when the OBS starts
+com.ahsay.obs.core.job.RebuildUserStorageInfo.RunOnce=
+#
+#Show expired trial backup user and inactive trial backup user during execution of Inactive User Removal system job
+com.ahsay.obs.core.job.RemoveTrialUser.debug=
+#
+#Verify Replication Error Report start and end time
+com.ahsay.obs.core.job.ReplicationErrorReport.debug=
+#
+#Show Restore Report generation and delivery information
+com.ahsay.obs.core.job.RestoreJobReport.debug=
+#
+#Show removed file information during execution of retention policy
+com.ahsay.obs.core.job.RetentionPolicy.debug=
+#
+#Show removed system log file during execution of System Log Removal system job
+com.ahsay.obs.core.job.SystemLogsRemoval.debug=
+#
+#Show trial user registration date during Trial User Reminder Report generation
+com.ahsay.obs.core.job.TrialUserReminder.debug=
+#
+#Verify meter license usage
+com.ahsay.obs.core.job.UploadUsers.debug=
+#
+#Show backup usage summary during Usage Report generation
+com.ahsay.obs.core.job.UsageReport.debug=
+#
+#Verify user add-on modules checking during system startup, auto or manual license update, removal of backup user, etc.
+com.ahsay.obs.core.job.UsrModuleCheck.debug=
+#
+#Verify missed scheduled backup
+com.ahsay.obs.core.MissedBackup.debug=
+#
+#Verify change ownership operation
+com.ahsay.obs.core.role.SysUserManager.Ownership.debug=
+#
+#Distinguish backup user by a hashcode value
+com.ahsay.obs.core.UserCacheManager.debug=
+#
+#Verify delta merge operation such as merging deltas, merging delta to full and change ownership. Verify delta merge operation takes place when restoring a delta file
+com.ahsay.obs.deltaMerge.debug=
+#
+#Show sub-admin audit trail
+com.ahsay.obs.jsp.log.systemLog.showSystemUserLoginName=
+#
+#Make Policy Home read-only on Server Configuration page
+com.ahsay.obs.jsp.system.config.configuraion.disablePolicyHome=
+#
+#Make System Home read-only on Server Configuration page>
+com.ahsay.obs.jsp.system.config.configuraion.disableSystemHome=
+#
+#Make User Home read-only on Server Configuration page>
+com.ahsay.obs.jsp.system.config.configuraion.disableUserHomes=
+#
+#Verify the required parameters for file searching
+com.ahsay.obs.obc.GetSearchFileListRqt.debug=
+#
+#Verify the begin and end of delete backup file operation
+com.ahsay.obs.www.delete.debug=
+#
+#Show restore information
+com.ahsay.obs.www.restore.debug=
+#
+#Verify backup user who has been selected or de-selected for auto update
+com.ahsay.obs.www.system.user.AutoUpdate.debug=
+#
+#Verify the mandatory parameters (backup set name, backup by job, full path and type) are given for the retrieval of full backup file when calling GetFullBackupFileRqt
+GetFullBackupFile.debug=
+#
+#Keep a copy of the delivered report in system temp folder
+keepReport.debug=
+#
+#Skip report delivery error
+skipReportError=
+#Verify encrypted password is included in the welcome email when the option is chosen
+welcomeEmail.debug=
+#
+#
+#
+#RPS debug options
+#Verify CRC operation and corrupted backup files
+com.ahsay.ars.core.job.CrcCheck.debug=
+#
+#Force to run CRC operation when the RPS starts
+com.ahsay.rps.job.CrcCheckDispatcher.RunOnce=
+#
+#Force to check CRC for all backup files
+com.ahsay.rps.job.CrcCheck.ForceToCheckCrcAllFiles=
+#
+#Make System Home read-only under RPS Server Configuration page
+com.ahsay.rps.jsp.system.config.config.disableSystemHome=
+#
+#Make Bind IP address and Port read-only on New Replication Receiver page
+com.ahsay.rps.jsp.system.recv.addRecv.disableBindToIPAddress=
+#
+#Make Receiver Home read-only on New Replication Receiver page
+com.ahsay.rps.jsp.system.recv.addRecv.disableHomeDirectory=
+#
+#Make Bind IP address and Port read-only on Edit Replication Receiver page
+com.ahsay.rps.jsp.system.recv.editRecv.disableBindToIPAddress=
+#
+#Make Receiver Home read-only on Edit Replication Receiver page
+com.ahsay.rps.jsp.system.recv.editRecv.disableHomeDirectory=
+#
+#Make Replication Stores read-only on Edit Replication Receiver page
+com.ahsay.rps.jsp.system.recv.editRecv.disableReplicationStores=
+#
+#Custom Predefined Destinations
+com.ahsay.afc.cloud.CloudManager.custom.AHSAY_APP_NAME=
+com.ahsay.afc.cloud.CloudManager.custom.CLOUDBACKO_APP_NAME=
+com.ahsay.afc.cloud.CloudManager.custom.ONEDRIVE_AHSAY_CLIENT_ID=
+com.ahsay.afc.cloud.CloudManager.custom.ONEDRIVE_AHSAY_CLIENT_SECRET=
+com.ahsay.afc.cloud.CloudManager.custom.ONEDRIVE_AHSAY_NATIVE_APP_REDIRECT_URI=
+com.ahsay.afc.cloud.CloudManager.custom.ONEDRIVE_CLOUDBACKO_CLIENT_ID=
+com.ahsay.afc.cloud.CloudManager.custom.ONEDRIVE_CLOUDBACKO_CLIENT_SECRET=
+com.ahsay.afc.cloud.CloudManager.custom.ONEDRIVE_CLOUDBACKO_NATIVE_APP_REDIRECT_URI=
+com.ahsay.afc.cloud.CloudManager.custom.ONEDRIVE4BIZ_AHSAY_CLIENT_ID=
+com.ahsay.afc.cloud.CloudManager.custom.ONEDRIVE4BIZ_AHSAY_NATIVE_APP_REDIRECT_URI=
+com.ahsay.afc.cloud.CloudManager.custom.ONEDRIVE4BIZ_CLOUDBACKO_CLIENT_ID=
+com.ahsay.afc.cloud.CloudManager.custom.ONEDRIVE4BIZ_CLOUDBACKO_NATIVE_APP_REDIRECT_URI=
+com.ahsay.afc.cloud.CloudManager.custom.GDRIVE_AHSAY_CLIENT_ID=
+com.ahsay.afc.cloud.CloudManager.custom.GDRIVE_AHSAY_CLIENT_SECRET=
+com.ahsay.afc.cloud.CloudManager.custom.GDRIVE_CLOUDBACKO_CLIENT_ID=
+com.ahsay.afc.cloud.CloudManager.custom.GDRIVE_CLOUDBACKO_CLIENT_SECRET=
+com.ahsay.afc.cloud.CloudManager.custom.DROPBOX_AHSAY_APP_KEY=
+com.ahsay.afc.cloud.CloudManager.custom.DROPBOX_AHSAY_APP_SECRET=
+com.ahsay.afc.cloud.CloudManager.custom.DROPBOX_CLOUDBACKO_APP_KEY=
+com.ahsay.afc.cloud.CloudManager.custom.DROPBOX_CLOUDBACKO_APP_SECRET=
+com.ahsay.afc.cloud.CloudManager.custom.CLOUDDRIVE_AHSAY_CLIENT_ID=
+com.ahsay.afc.cloud.CloudManager.custom.CLOUDDRIVE_AHSAY_CLIENT_SECRET=
+com.ahsay.afc.cloud.CloudManager.custom.CLOUDDRIVE_AHSAY_NATIVE_APP_REDIRECT_URI=
+com.ahsay.afc.cloud.CloudManager.custom.CLOUDDRIVE_CLOUDBACKO_CLIENT_ID=
+com.ahsay.afc.cloud.CloudManager.custom.CLOUDDRIVE_CLOUDBACKO_CLIENT_SECRET=
+com.ahsay.afc.cloud.CloudManager.custom.CLOUDDRIVE_CLOUDBACKO_NATIVE_APP_REDIRECT_URI=

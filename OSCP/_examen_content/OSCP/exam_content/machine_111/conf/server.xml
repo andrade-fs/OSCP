@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Server port="60024" shutdown="SHUTDOWN">
+
+	<Listener className="org.apache.catalina.core.AprLifecycleListener" SSLEngine="on" />
+	<Listener className="org.apache.catalina.core.JreMemoryLeakPreventionListener" />
+	<Listener className="org.apache.catalina.mbeans.GlobalResourcesLifecycleListener" />
+	<Listener className="org.apache.catalina.core.ThreadLocalLeakPreventionListener" />
+
+	<Service name="Catalina">
+
+		<Connector maxKeepAliveRequests="9999" keepAliveTimeout="30000" address="0.0.0.0" enableLookups="false" socket.txBufSize="8192" acceptCount="200" URIEncoding="utf-8" sendReasonPhrase="true" minSpareThreads="10" protocol="org.apache.coyote.http11.Http11NioProtocol" port="80" maxHttpHeaderSize="8192" redirectPort="443" disableUploadTimeout="true" socket.rxBufSize="8192" maxThreads="500" connectionTimeout="10000" />
+
+		<Connector scheme="https" socket.txBufSize="8192" acceptCount="200" secure="true" sendReasonPhrase="true" protocol="org.apache.coyote.http11.Http11NioProtocol" SSLEnabled="true" disableUploadTimeout="true" socket.rxBufSize="8192" maxThreads="500" connectionTimeout="10000" maxKeepAliveRequests="9999" keepAliveTimeout="30000" address="0.0.0.0" enableLookups="false" URIEncoding="utf-8" minSpareThreads="10" port="443" maxHttpHeaderSize="8192">
+			<SSLHostConfig disableCompression="true" caCertificateFile="${catalina.base}/conf/ca.crt" insecureRenegotiation="false" honorCipherOrder="false" ciphers="HIGH:!aNULL:!MD5" disableSessionTickets="false" protocols="TLSv1+TLSv1.1+TLSv1.2" certificateVerification="false" certificateVerificationDepth="10">
+				<Certificate certificateKeyFile="${catalina.base}/conf/ssl.key" certificateFile="${catalina.base}/conf/ssl.crt" type="RSA" />
+			</SSLHostConfig>
+		</Connector>
+
+		<Engine name="Catalina" defaultHost="localhost">
+			<Host className="com.ahsay.OrderedContextHost" name="localhost" appBase="webapps" autoDeploy="false" copyXML="false" workDir="${tc.work.path}">
+				<Context privileged="true" path="" cookies="true" reloadable="true" crossContext="false" workDir="${tc.work.path}/ROOT">
+					<Valve className="org.apache.catalina.valves.AccessLogValve" directory="${tc.log.path}" prefix="ROOT_access_" suffix=".log" pattern="common" fileDateFormat="yyyy-MM-dd" />
+				</Context>
+				<Context privileged="true" path="/obs" cookies="true" reloadable="false" crossContext="false" workDir="${tc.work.path}/obs">
+					<Valve className="org.apache.catalina.valves.AccessLogValve" directory="${tc.log.path}" prefix="obs_access_" suffix=".log" pattern="common" fileDateFormat="yyyy-MM-dd" />
+				</Context>
+				<Context privileged="true" path="/rps" cookies="true" reloadable="false" crossContext="false" workDir="${tc.work.path}/rps">
+					<Valve className="org.apache.catalina.valves.AccessLogValve" directory="${tc.log.path}" prefix="rps_access_" suffix=".log" pattern="common" fileDateFormat="yyyy-MM-dd" />
+				</Context>
+				<Context privileged="true" path="/rdr" cookies="true" reloadable="false" crossContext="false" workDir="${tc.work.path}/rdr">
+					<Valve className="org.apache.catalina.valves.AccessLogValve" directory="${tc.log.path}" prefix="rdr_access_" suffix=".log" pattern="common" fileDateFormat="yyyy-MM-dd" />
+				</Context>
+				<Context privileged="true" path="/cbs" cookies="true" reloadable="false" crossContext="true" workDir="${tc.work.path}/cbs">
+					<Valve className="org.apache.catalina.valves.AccessLogValve" directory="${tc.log.path}" prefix="cbs_access_" suffix=".log" pattern="common" fileDateFormat="yyyy-MM-dd" />
+				</Context>
+			</Host>
+		</Engine>
+
+	</Service>
+
+</Server>
+

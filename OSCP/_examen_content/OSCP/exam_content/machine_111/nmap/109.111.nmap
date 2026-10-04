@@ -1,0 +1,118 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-10-03 07:52 -0400
+Nmap scan report for 192.168.109.111
+Host is up (0.12s latency).
+Not shown: 65518 closed tcp ports (reset)
+PORT      STATE SERVICE       VERSION
+21/tcp    open  ftp           Microsoft ftpd
+| ftp-syst: 
+|_  SYST: Windows_NT
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| 02-23-22  08:13AM                  145 .env
+| 02-23-22  08:13AM                 2056 Acq.dll
+| 02-24-22  06:24AM                 4868 DVRParams.ini
+| 02-23-22  08:13AM                35996 Manifest.dll
+| 02-23-22  08:13AM                20455 program.exe
+| 02-23-22  08:15AM                40229 verisign.png
+|_02-23-22  08:14AM                11446 wab.dll
+80/tcp    open  http          Samsung AllShare httpd
+135/tcp   open  msrpc         Microsoft Windows RPC
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+443/tcp   open  ssl/http      Apache Tomcat 8.5.34
+| ssl-cert: Subject: commonName=Not Secure/organizationName=Ahsay System Corporation Limited/stateOrProvinceName=Hong Kong SAR/countryName=CN
+| Not valid before: 2017-03-21T20:52:17
+|_Not valid after:  2020-03-20T20:52:17
+|_ssl-date: TLS randomness does not represent time
+| http-title: Site doesn't have a title (text/html;charset=utf-8).
+|_Requested resource was /cbs/Logon.do
+445/tcp   open  microsoft-ds?
+5040/tcp  open  unknown
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+8080/tcp  open  http-proxy
+| fingerprint-strings: 
+|   GetRequest, HTTPOptions: 
+|     HTTP/1.1 200 OK
+|     Connection: Keep-Alive
+|     Keep-Alive: timeout=15, max=4
+|     Content-Type: text/html
+|     Content-Length: 985
+|     <HTML>
+|     <HEAD>
+|     <TITLE>
+|     Argus Surveillance DVR
+|     </TITLE>
+|     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+|     <meta name="GENERATOR" content="Actual Drawing 6.0 (http://www.pysoft.com) [PYSOFTWARE]">
+|     <frameset frameborder="no" border="0" rows="75,*,88">
+|     <frame name="Top" frameborder="0" scrolling="auto" noresize src="CamerasTopFrame.html" marginwidth="0" marginheight="0"> 
+|     <frame name="ActiveXFrame" frameborder="0" scrolling="auto" noresize src="ActiveXIFrame.html" marginwidth="0" marginheight="0">
+|     <frame name="CamerasTable" frameborder="0" scrolling="auto" noresize src="CamerasBottomFrame.html" marginwidth="0" marginheight="0"> 
+|     <noframes>
+|     <p>This page uses frames, but your browser doesn't support them.</p>
+|_    </noframes>
+|_http-title: Argus Surveillance DVR
+|_http-generator: Actual Drawing 6.0 (http://www.pysoft.com) [PYSOFTWARE]
+8443/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-generator: Nicepage 4.5.4, nicepage.com
+|_http-server-header: Microsoft-IIS/10.0
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-title: Home
+47001/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+49664/tcp open  msrpc         Microsoft Windows RPC
+49665/tcp open  msrpc         Microsoft Windows RPC
+49666/tcp open  msrpc         Microsoft Windows RPC
+49667/tcp open  msrpc         Microsoft Windows RPC
+49668/tcp open  msrpc         Microsoft Windows RPC
+49669/tcp open  msrpc         Microsoft Windows RPC
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8080-TCP:V=7.99%I=7%D=10/3%Time=6AC0ECAA%P=aarch64-unknown-linux-gn
+SF:u%r(GetRequest,451,"HTTP/1\.1\x20200\x20OK\r\nConnection:\x20Keep-Alive
+SF:\r\nKeep-Alive:\x20timeout=15,\x20max=4\r\nContent-Type:\x20text/html\r
+SF:\nContent-Length:\x20985\r\n\r\n<HTML>\r\n<HEAD>\r\n<TITLE>\r\nArgus\x2
+SF:0Surveillance\x20DVR\r\n</TITLE>\r\n\r\n<meta\x20http-equiv=\"Content-T
+SF:ype\"\x20content=\"text/html;\x20charset=ISO-8859-1\">\r\n<meta\x20name
+SF:=\"GENERATOR\"\x20content=\"Actual\x20Drawing\x206\.0\x20\(http://www\.
+SF:pysoft\.com\)\x20\[PYSOFTWARE\]\">\r\n\r\n<frameset\x20frameborder=\"no
+SF:\"\x20border=\"0\"\x20rows=\"75,\*,88\">\r\n\x20\x20<frame\x20name=\"To
+SF:p\"\x20frameborder=\"0\"\x20scrolling=\"auto\"\x20noresize\x20src=\"Cam
+SF:erasTopFrame\.html\"\x20marginwidth=\"0\"\x20marginheight=\"0\">\x20\x2
+SF:0\r\n\x20\x20<frame\x20name=\"ActiveXFrame\"\x20frameborder=\"0\"\x20sc
+SF:rolling=\"auto\"\x20noresize\x20src=\"ActiveXIFrame\.html\"\x20marginwi
+SF:dth=\"0\"\x20marginheight=\"0\">\r\n\x20\x20<frame\x20name=\"CamerasTab
+SF:le\"\x20frameborder=\"0\"\x20scrolling=\"auto\"\x20noresize\x20src=\"Ca
+SF:merasBottomFrame\.html\"\x20marginwidth=\"0\"\x20marginheight=\"0\">\x2
+SF:0\x20\r\n\x20\x20<noframes>\r\n\x20\x20\x20\x20<p>This\x20page\x20uses\
+SF:x20frames,\x20but\x20your\x20browser\x20doesn't\x20support\x20them\.</p
+SF:>\r\n\x20\x20</noframes>\r")%r(HTTPOptions,451,"HTTP/1\.1\x20200\x20OK\
+SF:r\nConnection:\x20Keep-Alive\r\nKeep-Alive:\x20timeout=15,\x20max=4\r\n
+SF:Content-Type:\x20text/html\r\nContent-Length:\x20985\r\n\r\n<HTML>\r\n<
+SF:HEAD>\r\n<TITLE>\r\nArgus\x20Surveillance\x20DVR\r\n</TITLE>\r\n\r\n<me
+SF:ta\x20http-equiv=\"Content-Type\"\x20content=\"text/html;\x20charset=IS
+SF:O-8859-1\">\r\n<meta\x20name=\"GENERATOR\"\x20content=\"Actual\x20Drawi
+SF:ng\x206\.0\x20\(http://www\.pysoft\.com\)\x20\[PYSOFTWARE\]\">\r\n\r\n<
+SF:frameset\x20frameborder=\"no\"\x20border=\"0\"\x20rows=\"75,\*,88\">\r\
+SF:n\x20\x20<frame\x20name=\"Top\"\x20frameborder=\"0\"\x20scrolling=\"aut
+SF:o\"\x20noresize\x20src=\"CamerasTopFrame\.html\"\x20marginwidth=\"0\"\x
+SF:20marginheight=\"0\">\x20\x20\r\n\x20\x20<frame\x20name=\"ActiveXFrame\
+SF:"\x20frameborder=\"0\"\x20scrolling=\"auto\"\x20noresize\x20src=\"Activ
+SF:eXIFrame\.html\"\x20marginwidth=\"0\"\x20marginheight=\"0\">\r\n\x20\x2
+SF:0<frame\x20name=\"CamerasTable\"\x20frameborder=\"0\"\x20scrolling=\"au
+SF:to\"\x20noresize\x20src=\"CamerasBottomFrame\.html\"\x20marginwidth=\"0
+SF:\"\x20marginheight=\"0\">\x20\x20\r\n\x20\x20<noframes>\r\n\x20\x20\x20
+SF:\x20<p>This\x20page\x20uses\x20frames,\x20but\x20your\x20browser\x20doe
+SF:sn't\x20support\x20them\.</p>\r\n\x20\x20</noframes>\r");
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2026-10-03T11:55:49
+|_  start_date: N/A
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 193.54 seconds

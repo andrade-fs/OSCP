@@ -1,0 +1,4 @@
+oliver Ashton  || oliver@zerostudio.com || $2y$10$H3FieBoLNQMtkGmD0rHtneCFQlokxN4NNHAtmcamyF90Q9FEoyati
+Isabella Martinez || isabella@zerostudio.com || $2y$10$jSr3LvFXMZteCtomQXvxLeaEqKawufpKlaBslRAvbeVWA/vFHmWbG
+Elastic Turner || elastic@zerostudio.com || $2y$10$Nk9lzPoTX5U42.4XaeYQd.EF/lxssDIFCRmYC3KtaV60HLiB0gIP.
+

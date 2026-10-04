@@ -1,0 +1,27 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-10-03 14:34 -0400
+Nmap scan report for 192.168.109.110
+Host is up (0.13s latency).
+Not shown: 65530 filtered tcp ports (no-response)
+PORT     STATE  SERVICE VERSION
+22/tcp   open   ssh     OpenSSH 9.6p1 Ubuntu 3ubuntu13.16 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 a9:be:d5:5d:da:c4:ba:46:1b:94:16:ed:8e:e6:5d:d7 (ECDSA)
+|_  256 03:01:4c:8b:70:58:ab:c9:a7:1e:74:04:2a:d7:87:44 (ED25519)
+53/tcp   closed domain
+80/tcp   open   http    Apache httpd 2.4.58 ((Ubuntu))
+| http-robots.txt: 3 disallowed entries 
+|_/api/ /exports/ /dashboard.php
+|_http-server-header: Apache/2.4.58 (Ubuntu)
+| http-title: ZeroStudio | Login
+|_Requested resource was /login.php
+5601/tcp open   http    Elasticsearch Kibana (serverName: zerostudio-kibana)
+| http-title: Elastic
+|_Requested resource was /app/home
+9200/tcp open   http    Elasticsearch REST API 8.19.14 (name: zerostudio-es-01; cluster: zerostudio-prod; Lucene 9.12.2)
+| http-methods: 
+|_  Potentially risky methods: DELETE
+|_http-title: Site doesn't have a title (application/json).
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 44.30 seconds

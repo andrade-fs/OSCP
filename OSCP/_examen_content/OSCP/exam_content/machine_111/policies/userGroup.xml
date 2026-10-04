@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setting>
+	<Key name="com.ahsay.obx.cxp.cpf.UserGroup" content="" allowMultiple="Y">
+		<Value data="1" name="rsv-id" type="string" />
+		<Value data="All Users" name="rsv-group-name" type="string" />
+		<Value data="backup-user" name="rsv-user-type" type="string" />
+		<Value data="" name="rsv-owner" type="string" />
+		<Value data="2" name="policy-id-1" type="string" />
+		<Value data="" name="billing-option" type="string" />
+	</Key>
+</Setting>

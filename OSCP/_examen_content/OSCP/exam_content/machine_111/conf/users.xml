@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setting>
+	<Key name="com.ahsay.obs.core.cxp.User" content="" allowMultiple="Y">
+		<Value data="1675418394512" name="id" type="string" />
+		<Value data="Admin" name="name" type="string" />
+		<Value data="kktJgqoWQWvB2IiM+2CXNg7aY7uqZB3ePq92N2QSHZo=" name="password" type="string" />
+		<Value data="ar" name="language" type="string" />
+		<Value data="N" name="upload-encryption-key" type="boolean" />
+		<Value data="" name="security-identifier" type="string" />
+		<Value data="-1" name="last-showing-license-violation-time" type="long" />
+		<Value data="" name="alias" type="string" />
+		<Value data="1002" name="timezone" type="string" />
+		<Value data="034B73904FCC4E40963B8029AA6A87AD739D4B97EC7348C29D9C63D3A3239DF4" name="access-token" type="string" />
+		<Value data="N" name="host-quota-enabled" type="boolean" />
+		<Value data="1" name="host-quota" type="long" />
+		<Value data="" name="host-info" type="string" />
+		<Value data="-1" name="last-client-login-time" type="long" />
+		<Value data="Y" name="hashed-password" type="boolean" />
+		<Value data="52428800" name="quota" type="long" />
+		<Value data="TRIAL" name="type" type="string" />
+		<Value data="OBM" name="client-type" type="string" />
+		<Value data="ENABLE" name="status" type="string" />
+		<Value data="1675418394512" name="registration-date" type="long" />
+		<Value data="1" name="ad-group" type="string" />
+		<Value data="" name="notes" type="string" />
+		<Value data="" name="owner" type="string" />
+		<Value data="oscp.exam" name="host-name" type="string" />
+		<Value data="0" name="v6-bandwidth" type="long" />
+		<Value data="0" name="last-login-time" type="long" />
+		<Value data="" name="client-run-version" type="string" />
+		<Value data="0" name="import-date" type="long" />
+		<Value data="Y" name="quota-setting-migrated" type="boolean" />
+		<Value data="N" name="run-direct-quota-enabled" type="boolean" />
+		<Value data="1" name="run-direct-quota" type="long" />
+		<Key name="com.ahsay.obx.cxp.cloud.ProxySettings" content="">
+			<Value data="N" name="enable" type="boolean" />
+			<Value data="" name="type" type="string" />
+			<Value data="" name="host" type="string" />
+			<Value data="" name="port" type="string" />
+			<Value data="" name="user-name" type="string" />
+			<Value data="" name="password" type="string" />
+		</Key>
+		<Key name="com.ahsay.obx.cxp.cloud.EmailReportSettings" content="">
+			<Value data="N" name="enable" type="boolean" />
+			<Value data="" name="smtp-host-name" type="string" />
+			<Value data="" name="smtp-port" type="string" />
+			<Value data="" name="smtp-auth-user" type="string" />
+			<Value data="" name="smtp-auth-pwd" type="string" />
+			<Value data="" name="email" type="string" />
+			<Value data="N" name="send-bkp-rpt" type="boolean" />
+			<Value data="" name="send-bkp-rpt-mode" type="string" />
+			<Value data="N" name="send-missed-bkp-rpt" type="boolean" />
+			<Value data="0" name="missed-bkp-interval" type="integer" />
+			<Value data="N" name="send-storage-alert" type="boolean" />
+			<Value data="0" name="usage" type="integer" />
+			<Value data="" name="report-sender-email" type="string" />
+		</Key>
+		<Key name="com.ahsay.obx.cxp.cloud.SoftwareUpdateSettings" content="">
+			<Value data="Y" name="enable" type="boolean" />
+		</Key>
+		<Key name="com.ahsay.obx.cxp.cloud.WindowsEventLogSettings" content="">
+			<Value data="N" name="enable" type="boolean" />
+			<Value data="N" name="log-error" type="boolean" />
+			<Value data="N" name="log-warn" type="boolean" />
+			<Value data="N" name="log-info" type="boolean" />
+			<Value data="N" name="log-profile" type="boolean" />
+			<Value data="N" name="log-buy" type="boolean" />
+			<Value data="N" name="log-utilities" type="boolean" />
+			<Value data="N" name="log-backup" type="boolean" />
+			<Value data="N" name="log-license" type="boolean" />
+			<Value data="N" name="log-login-logout" type="boolean" />
+			<Value data="N" name="log-restore" type="boolean" />
+			<Value data="N" name="log-software-update" type="boolean" />
+			<Value data="N" name="log-services" type="boolean" />
+			<Value data="N" name="log-report" type="boolean" />
+		</Key>
+		<Key name="com.ahsay.obx.cxp.cloud.PasswordHistory" content="">
+			<Value data="1675418394512" name="password-last-modified-time" type="long" />
+			<Key name="com.ahsay.obx.cxp.cloud.HistoryBean" content="" allowMultiple="Y">
+				<Value data="kktJgqoWQWvB2IiM+2CXNg7aY7uqZB3ePq92N2QSHZo=" name="password" type="string" />
+				<Value data="-1" name="last-disabled-time" type="long" />
+			</Key>
+		</Key>
+		<Key name="com.ahsay.obx.cxp.obs.LdapSettings" content="">
+			<Value data="N" name="ldap-user" type="boolean" />
+			<Value data="-1" name="last-delete-time" type="long" />
+			<Value data="-1" name="last-disable-time" type="long" />
+			<Value data="-1" name="first-auth-failure-time" type="long" />
+		</Key>
+		<Key name="com.ahsay.obx.cxp.cloud.ModuleSettings" content="">
+			<Value data="Y" name="msexchange-backup-enabled" type="boolean" />
+			<Value data="0" name="ms-exchange-dag-svr-quota" type="long" />
+			<Value data="Y" name="mssql-backup-enabled" type="boolean" />
+			<Value data="Y" name="oracle-backup-enabled" type="boolean" />
+			<Value data="Y" name="lotus-domino-backup-enabled" type="boolean" />
+			<Value data="Y" name="lotus-notes-backup-enabled" type="boolean" />
+			<Value data="Y" name="mysql-backup-enabled" type="boolean" />
+			<Value data="Y" name="in-file-delta-enabled" type="boolean" />
+			<Value data="Y" name="shadow-copy-enabled" type="boolean" />
+			<Value data="Y" name="ms-exchange-mailbox-backup-enabled" type="boolean" />
+			<Value data="10" name="ms-ex-mailbox-quota" type="long" />
+			<Value data="Y" name="nas-client-enabled" type="boolean" />
+			<Value data="N" name="delta-merge-enabled" type="boolean" />
+			<Value data="Y" name="cdp-enabled" type="boolean" />
+			<Value data="Y" name="windows-system-backup-enabled" type="boolean" />
+			<Value data="Y" name="windows-system-state-backup-enabled" type="boolean" />
+			<Value data="Y" name="shadow-protect-backup-enabled" type="boolean" />
+			<Value data="Y" name="mshyperv-backup-enabled" type="boolean" />
+			<Value data="10" name="ms-hyperv-vm-quota" type="long" />
+			<Value data="GUESTVM" name="ms-hyperv-vm-quota-type" type="string" />
+			<Value data="Y" name="vmware-backup-enabled" type="boolean" />
+			<Value data="10" name="vmware-vm-quota" type="long" />
+			<Value data="GUESTVM" name="vmware-vm-quota-type" type="string" />
+			<Value data="Y" name="mobile-enabled" type="boolean" />
+			<Value data="10" name="mobile-quota" type="long" />
+			<Value data="Y" name="office365-mail-enabled" type="boolean" />
+			<Value data="10" name="office365-mail-quota" type="long" />
+			<Value data="Y" name="openDirect-enabled" type="boolean" />
+			<Value data="10" name="openDirect-quota" type="long" />
+			<Value data="Y" name="qnap-enabled" type="boolean" />
+		</Key>
+		<Key name="com.ahsay.obx.cxp.obs.UserLockSettings" content="">
+			<Value data="0" name="login-failure-count" type="integer" />
+			<Value data="-1" name="locked-time" type="long" />
+			<Value data="-1" name="last-failure-time" type="long" />
+		</Key>
+		<Key name="com.ahsay.obx.cxp.obs.UserSuspendSettings" content="">
+			<Value data="Y" name="enable" type="boolean" />
+			<Value data="1683194394512" name="date" type="long" />
+		</Key>
+		<Key name="com.ahsay.obx.cxp.obs.RoutineJobSettings" content="">
+			<Value data="0" name="quota-remind-percentage" type="integer" />
+			<Value data="-1" name="inactive-report-last-sent-time" type="long" />
+		</Key>
+		<Key name="com.ahsay.obx.cxp.obs.GroupPolicySettings" content="">
+			<Value data="0" name="group-quota" type="long" />
+			<Value data="0" name="used-group-quota" type="long" />
+			<Value data="0" name="file-size-limit" type="long" />
+			<Value data="N" name="exclude-network-share" type="boolean" />
+			<Value data="1" name="user-group-id-1" type="string" />
+		</Key>
+		<Key name="com.ahsay.obx.cxp.obs.ForgotPasswordSettings" content="">
+			<Value data="" name="token" type="string" />
+			<Value data="-1" name="request-time" type="long" />
+			<Value data="-1" name="reset-time" type="long" />
+		</Key>
+		<Key name="com.ahsay.obx.cxp.cloud.Contact" content="" allowMultiple="Y">
+			<Value data="1675418394512" name="id" type="string" />
+			<Value data="" name="name" type="string" />
+			<Value data="" name="email" type="string" />
+			<Value data="N" name="encrypt-email" type="boolean" />
+			<Value data="" name="email-certificate" type="string" />
+			<Value data="" name="address" type="string" />
+			<Value data="" name="company" type="string" />
+			<Value data="" name="website" type="string" />
+			<Value data="" name="phone1" type="string" />
+			<Value data="" name="phone2" type="string" />
+		</Key>
+		<Key name="com.ahsay.obx.cxp.obs.DestinationQuotaBean" content="" allowMultiple="Y">
+			<Value data="Y" name="enabled" type="boolean" />
+			<Value data="OBS" name="destination-key" type="string" />
+			<Value data="157286400" name="quota" type="long" />
+		</Key>
+	</Key>
+</Setting>

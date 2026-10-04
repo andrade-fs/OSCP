@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setting>
+	<Key name="com.ahsay.rdr.core.key.lic.LicenseKey" content="">
+		<Value data="LicenseKey-1000001" name="rsv-id" type="string" />
+		<Value data="EvaluationOnly" name="rsv-licenesee-name" type="string" />
+		<Value data="JWz7v-uuv1b-HF4W2-vpmhv-YQ" name="rsv-product-key" type="string" />
+		<Value data="uRSPSShGVXRO+ROIAcwEWKin7Ovz3898ZUcZdhko43UD3p83nJqqDyCrk8z1U7SPYGb+xJgKqI2fZjExOk/YhN2EwlpPN5tHuq+RxP3ZtX9MQ70spWUuCwbzVoCKL/3kpZxB1FGImSJzYTV6Q98zhLWE63Tiho7XbI586KmHERHggqlC0PrZLVwrYKKLlhDI" name="rsv-license-key" type="string" />
+		<Value data="Vlckx-Y/E1i-o1asS-McjLX-SYP3/-et0UQ-SlPtS-pfacc-oh4xT-WpjXu-Gxwp0-XGi3i-gsN51-G8keu-Ptk9A-UtncT-CelPI-ap9xw-uEXr4-kgHrE-T05F2-eLxu8-uQtpU-iZQg7-RC+1B-dsx2J-13Yza-LCSB0-12wz8-f4+DT-loUHO-dypVt-F4nQ9-iqi+a-zON0x-QW0Nu-lHbzs-nhytA-+XkC6-G9Blt-0JO4A-YP/Jr-jYo0c-i2g9G-hF4pw-+CqbC-d+rxz-W+fqX-dsJne-s7u7i-fSlsv-81z7P-AtcFe-NIB6R-qVQLI-2Tzbu-ZhEkd-Dkcab-2RDbR-H2qaP-fruJs-3xmDX-Gs144-yGL/U-kYtQu-eoZW9-o2C23-JYzHf-ag==" name="rsv-random-key" type="string" />
+	</Key>
+</Setting>

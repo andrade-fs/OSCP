@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Setting>
+	<Key name="com.ahsay.rdr.core.key.rdr.Rdr">
+		<Value data="Rdr-1000001" name="rsv-id" type="string" />
+		<Value data="system" name="rsv-login-name" type="string" />
+		<Value data="VLUwclQO7rj46TQ+cfKBdg==" name="rsv-password" type="string" />
+		<Value data="Y" name="rsv-hashed-password" type="boolean" />
+		<Value data="C:\Program Files\AhsayCBS\system" name="rsv-system-home" type="string" />
+		<Value data="localhost" name="rsv-host-name" type="string" />
+		<Value data="N" name="rsv-lic-unit-sync" type="boolean" />
+		<Value data="0" name="rsv-lic-unit-sync-time" type="long" />
+		<Key name="com.ahsay.rdr.core.key.rdr.Language">
+			<Value data="LANGUAGE-1000001" name="rsv-id" type="string" />
+			<Value data="Y" name="rsv-bg" type="boolean" />
+			<Value data="Y" name="rsv-ca" type="boolean" />
+			<Value data="Y" name="rsv-cs" type="boolean" />
+			<Value data="Y" name="rsv-da" type="boolean" />
+			<Value data="Y" name="rsv-de" type="boolean" />
+			<Value data="Y" name="rsv-el" type="boolean" />
+			<Value data="Y" name="rsv-en" type="boolean" />
+			<Value data="Y" name="rsv-es" type="boolean" />
+			<Value data="Y" name="rsv-eu" type="boolean" />
+			<Value data="Y" name="rsv-fi" type="boolean" />
+			<Value data="Y" name="rsv-fr" type="boolean" />
+			<Value data="N" name="rsv-iw" type="boolean" />
+			<Value data="Y" name="rsv-hu" type="boolean" />
+			<Value data="Y" name="rsv-is" type="boolean" />
+			<Value data="Y" name="rsv-it" type="boolean" />
+			<Value data="Y" name="rsv-ja" type="boolean" />
+			<Value data="Y" name="rsv-ko" type="boolean" />
+			<Value data="Y" name="rsv-lt" type="boolean" />
+			<Value data="Y" name="rsv-nl" type="boolean" />
+			<Value data="Y" name="rsv-no" type="boolean" />
+			<Value data="Y" name="rsv-pl" type="boolean" />
+			<Value data="Y" name="rsv-pt_BR" type="boolean" />
+			<Value data="Y" name="rsv-pt_PT" type="boolean" />
+			<Value data="Y" name="rsv-ro" type="boolean" />
+			<Value data="Y" name="rsv-ru" type="boolean" />
+			<Value data="Y" name="rsv-sl" type="boolean" />
+			<Value data="Y" name="rsv-sv" type="boolean" />
+			<Value data="N" name="rsv-th_TH" type="boolean" />
+			<Value data="Y" name="rsv-tr" type="boolean" />
+			<Value data="N" name="rsv-uk" type="boolean" />
+			<Value data="Y" name="rsv-zh_CN" type="boolean" />
+			<Value data="Y" name="rsv-zh_TW" type="boolean" />
+		</Key>
+		<Key name="com.ahsay.rdr.core.key.rdr.License" content="">
+			<Value data="License-1000001" name="rsv-id" type="string" />
+			<Value data="EvaluationOnly" name="rsv-licensee-name" type="string" />
+			<Value data="JWz7v-uuv1b-HF4W2-vpmhv-YQ" name="rsv-license-key" type="string" />
+			<Value data="" name="rsv-email" type="string" />
+			<Value data="" name="rsv-company" type="string" />
+			<Value data="" name="rsv-contact-name" type="string" />
+			<Value data="" name="rsv-phone" type="string" />
+		</Key>
+		<Key name="com.ahsay.rdr.core.key.rdr.SmtpServer" content="">
+			<Value data="SmtpServer-1000001" name="rsv-id" type="string" />
+			<Value data="your.smtp.server" name="rsv-host-name" type="string" />
+			<Value data="" name="rsv-login-name" type="string" />
+			<Value data="" name="rsv-password" type="string" />
+			<Value data="Y" name="rsv-hashed-password" type="boolean" />
+		</Key>
+		<Key name="com.ahsay.rdr.core.key.rdr.ReportSender" content="">
+			<Value data="ReportSender-1000001" name="rsv-id" type="string" />
+			<Value data="RDR Report Sender" name="rsv-contact-name" type="string" />
+			<Value data="report.sender@your.company" name="rsv-email" type="string" />
+		</Key>
+		<Key name="com.ahsay.rdr.core.key.rdr.AdminContact" content="">
+			<Value data="AdminContact-1000001" name="rsv-id" type="string" />
+			<Value data="RDR Admin Contact" name="rsv-contact-name" type="string" />
+			<Value data="admin.contact@your.company" name="rsv-email" type="string" />
+		</Key>
+		<Key name="com.ahsay.rdr.core.key.rdr.CheckDuplicatedUsersJob" content="">
+			<Value data="" name="rsv-id" type="string" />
+			<Value data="disable" name="rsv-status" type="string" />
+			<Value data="0" name="rsv-hour" type="long" />
+			<Value data="0" name="rsv-minute" type="long" />
+		</Key>
+	</Key>
+</Setting>

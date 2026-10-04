@@ -1,0 +1,19 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-10-03 06:04 -0400
+Stats: 0:00:04 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 10.60% done; ETC: 06:05 (0:00:34 remaining)
+Nmap scan report for 192.168.109.112
+Host is up (0.12s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT     STATE SERVICE VERSION
+80/tcp   open  http    Microsoft IIS httpd 10.0
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: Almond Blossoms AI
+| http-methods: 
+|_  Potentially risky methods: TRACE
+5985/tcp open  http    Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 22.40 seconds
