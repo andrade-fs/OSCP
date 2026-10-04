@@ -489,18 +489,18 @@ windows-exploit-suggester.py --database 2023-*.xls --systeminfo systeminfo.txt
 
 ## Herramientas a tener listas (bajalas ANTES del examen)
 
-| Herramienta | Uso |
-| --- | --- |
-| `winPEASx64.exe` | Enumeración automática |
-| `PowerUp.ps1` | Servicios, tareas, autoruns, AlwaysInstallElevated |
-| `PrivescCheck.ps1` | Alternativa más silenciosa |
-| `GodPotato.exe` / `PrintSpoofer64.exe` | SeImpersonate → SYSTEM (ver `../cheatsheets/potatoes.md`) |
-| `RoguePotato.exe` / `JuicyPotato.exe` / `SweetPotato.exe` | Potatoes alternativos según versión |
-| `SeManageVolumeExploit.exe` | `SeManageVolumePrivilege` → escribir en `C:\` |
-| `SharpUp.exe` / `Seatbelt.exe` | Enumeración de escalada y del host |
-| `accesschk.exe` | Permisos de servicios y archivos |
-| `procdump.exe` | Dump de LSASS |
-| `winPEAS.bat` | Fallback sin PowerShell |
+| Herramienta                                               | Uso                                                       |
+| --------------------------------------------------------- | --------------------------------------------------------- |
+| `winPEASx64.exe`                                          | Enumeración automática                                    |
+| `PowerUp.ps1`                                             | Servicios, tareas, autoruns, AlwaysInstallElevated        |
+| `PrivescCheck.ps1`                                        | Alternativa más silenciosa                                |
+| `GodPotato.exe` / `PrintSpoofer64.exe`                    | SeImpersonate → SYSTEM (ver `../cheatsheets/potatoes.md`) |
+| `RoguePotato.exe` / `JuicyPotato.exe` / `SweetPotato.exe` | Potatoes alternativos según versión                       |
+| `SeManageVolumeExploit.exe`                               | `SeManageVolumePrivilege` → escribir en `C:\`             |
+| `SharpUp.exe` / `Seatbelt.exe`                            | Enumeración de escalada y del host                        |
+| `accesschk.exe`                                           | Permisos de servicios y archivos                          |
+| `procdump.exe`                                            | Dump de LSASS                                             |
+| `winPEAS.bat`                                             | Fallback sin PowerShell                                   |
 
 Si `evil-winrm` te sirve los archivos desde tu Kali, esto se simplifica mucho:
 

